@@ -1,0 +1,23 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model LeadBruto {
+  id             String   @id @default(uuid())
+  classe         String
+  subclasse      String?
+  grupoTensao    String?
+  modalidade     String?
+  distribuidora  String
+  municipio      String
+  estado         String
+  latitude       Float?
+  longitude      Float?
+  dataConexao    DateTime?
+  dataImportacao DateTime @default(now())
+}
