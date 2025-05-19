@@ -1,11 +1,12 @@
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
 generator client {
   provider = "prisma-client-js"
 }
 
-datasource db {
-  provider = "postgresql"
-  url      = env("DATABASE_URL")
-}
 
 model LeadBruto {
   id             String   @id @default(uuid())
@@ -20,4 +21,17 @@ model LeadBruto {
   longitude      Float?
   dataConexao    DateTime?
   dataImportacao DateTime @default(now())
+}
+
+model Distribuidora {
+  id         String   @id @default(uuid())
+  nome       String
+  regiao     String?
+  uf         String
+  cnpj       String?
+  outorga    String?
+  tipo       String?
+  grupo      String?
+  subgrupo   String?
+  classe     String?
 }
