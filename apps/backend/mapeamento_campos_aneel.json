@@ -1,0 +1,22 @@
+{
+  "EQME_2024.csv": {
+    "url": "https://www.aneel.gov.br/documents/656877/28743505/EQME_2024.csv",
+    "erro": "Request failed with status code 404"
+  },
+  "EQSE_2024.csv": {
+    "url": "https://www.aneel.gov.br/documents/656877/28743505/EQSE_2024.csv",
+    "erro": "Request failed with status code 404"
+  },
+  "UCAT_tab.csv": {
+    "url": "https://www.aneel.gov.br/documents/656877/28743505/UCAT_tab.csv",
+    "erro": "Request failed with status code 404"
+  },
+  "UGRD_2024.csv": {
+    "url": "https://www.aneel.gov.br/documents/656877/28743505/UGRD_2024.csv",
+    "erro": "Request failed with status code 404"
+  },
+  "GD.csv": {
+    "url": "https://www.aneel.gov.br/documents/656877/28743505/GD.csv",
+    "erro": "Request failed with status code 404"
+  }
+}

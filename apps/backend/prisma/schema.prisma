@@ -9,19 +9,28 @@ generator client {
 
 
 model LeadBruto {
-  id             String   @id @default(uuid())
-  classe         String
-  subclasse      String?
-  grupoTensao    String?
-  modalidade     String?
-  distribuidora  String
-  municipio      String
-  estado         String
-  latitude       Float?
-  longitude      Float?
-  dataConexao    DateTime?
-  dataImportacao DateTime @default(now())
+  id                  String   @id @default(uuid())
+  nomeUc              String
+  cnpj                String?         // <- Novo (futuramente com enriquecimento)
+  classe              String
+  subclasse           String?
+  grupoTensao         String?
+  modalidade          String?
+  codigoDistribuidora String
+  distribuidora       String
+  municipio           String
+  estado              String
+  latitude            Float?
+  longitude           Float?
+  dataConexao         DateTime?
+  dataAtualizacao     DateTime?
+  dataImportacao      DateTime @default(now())
+  status              String   @default("raw")   // Ex: "raw", "enriquecido", "descartado"
+  segmento            String?                    // <- "C&I", "Home", "Agro"
+  origem              String?                    // <- "UCAT_PJ", "EQME", "GD", etc.
 }
+
+
 
 model Distribuidora {
   id         String   @id @default(uuid())
