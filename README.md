@@ -1,261 +1,175 @@
-# Youon Intelligence – Plataforma de Mapeamento de Leads Estratégicos no Setor de Energia
+📘 README.md — Projeto Youon Intelligence
+md
+Copiar
+Editar
+# Youon Intelligence – Plataforma de Inteligência Comercial para o Setor de Energia
 
-Bem-vindo ao projeto **Youon Intelligence**, uma plataforma modular e escalável voltada para o mapeamento, enriquecimento e análise de leads estratégicos do setor de energia no Brasil. Esta plataforma integra dados públicos da ANEEL, APIs externas (como CNPJá e Google Maps) e algoritmos de classificação para entregar inteligência comercial de alto nível para os segmentos **C&I (Comercial e Industrial)** e, futuramente, **Home**, **GTD** e outros.
-
----
-
-## Visão Geral
-
-O sistema realiza:
-
-- **Importação automatizada** de datasets públicos da ANEEL.
-- **Armazenamento estruturado** em banco de dados relacional (PostgreSQL).
-- **Enriquecimento de dados** com APIs públicas (CNPJ, localização, categoria econômica, etc.).
-- **Classificação dos leads** com base em consumo, qualidade e perfil.
-- **Visualização futura** dos leads em mapa interativo com filtros por região, segmento e prioridade.
-- **Sugestão futura de soluções energéticas** com base em perfil técnico e tarifário.
+Bem-vindo à plataforma **Youon Intelligence**, uma solução robusta e escalável voltada para mapeamento, enriquecimento e priorização de leads estratégicos no setor de energia brasileiro. O sistema coleta e cruza dados da ANEEL com APIs externas como CNPJá e Google Maps, alimentando um pipeline de inteligência comercial dividido por segmentos: **C&I (Comercial e Industrial)**, **Home** (futuro), e **GTD** (Governamental e Grandes Consumidores).
 
 ---
 
-## Pipeline de Execução (Ordem Obrigatória)
+## 🧠 Visão Geral
 
-> Cada script deve ser executado **em ordem** para que os dados fluam corretamente e não quebrem dependências.
-
-### 1. `importLeadBruto.job.ts`
-- **Função:** Baixa os datasets (UCAT, UCMT, UCBT), extrai os dados principais de identificação e insere na tabela `LeadBruto`.
-- **Output:** Leads brutos com campos: nomeUc, classe, grupoTensao, modalidade, tipoEnergia, distribuidora, município, UF, CNPJ, etc.
-
-### 2. `importEnergiaDemanda.job.ts`
-- **Função:** Lê os mesmos CSVs e insere dados de energia e demanda mensal nas tabelas `LeadEnergia` e `LeadDemanda`.
-- **Requisitos:** Leads precisam já existir na tabela `LeadBruto`.
-
-### 3. `importQualidade.job.ts`
-- **Função:** Lê dados de DIC, FIC e outros indicadores de qualidade por lead e insere em `LeadQualidade`.
-- **Nota:** Também verifica ausência de rede e marca `semRede`.
-
-### 4. `enrichLeads.job.ts`
-- **Função:** Enriquecer cada lead com base no CNPJ usando APIs externas (ex: nome fantasia, CNAE, endereço completo).
-- **Output:** Tabela `LeadEnriquecido` + update do status do lead para `enriquecido`.
-
-### 5. `classifyLeads.job.ts`
-- **Função:** Classifica leads em categorias HOT, WARM e COLD com base nos dados internos e externos.
-- **Output:** Campo `classificacao` em `LeadBruto` preenchido.
+- 📥 Importação automatizada de dados públicos da ANEEL (BDGD);
+- 🧠 Enriquecimento com dados de CNPJ, localização, CNAE e nome fantasia;
+- 🔎 Classificação inteligente dos leads em HOT, WARM ou COLD;
+- 🗺️ Visualização futura em mapas com filtros por região, prioridade e segmento;
+- 🔧 Sugestão futura de soluções ideais baseadas em consumo, demanda e qualidade.
 
 ---
 
-## Estrutura Final de Pastas
+## 🧱 Estrutura Final de Pastas
 
 ```bash
-apps/
-└── backend/
-    ├── src/
-    │   ├── api/                   # Rotas Express
-    │   │   ├── cni/               # Rotas para leads comerciais e industriais
-    │   │   └── ...                # Futuros segmentos: home/, gtd/
-    │   ├── controllers/          # Regras de negócio das rotas
-    │   │   └── cni/               # Ex: lead.controller.ts
-    │   ├── services/             # Integrações com APIs externas
-    │   │   ├── cnpj.service.ts
-    │   │   ├── google.service.ts
-    │   │   └── aneel.service.ts
-    │   ├── jobs/                 # Scripts de automação executados em ordem
-    │   │   ├── importLeadBruto.job.ts
-    │   │   ├── importEnergiaDemanda.job.ts
-    │   │   ├── importQualidade.job.ts
-    │   │   ├── enrichLeads.job.ts
-    │   │   └── classifyLeads.job.ts
-    │   ├── middlewares/          # Segurança, erros e logs (futuro)
-    │   ├── utils/                # Funções auxiliares
-    │   │   ├── csvUtils.ts
-    │   │   └── calcUtils.ts
-    │   ├── database/
-    │   │   ├── prismaClient.ts
-    │   │   └── seed.ts (opcional)
-    │   └── server.ts             # Inicialização da API Express
-    ├── prisma/
-    │   ├── schema.prisma
-    │   └── migrations/
-    ├── data/
-    │   ├── datasets.json               # Lista dos datasets usados (gerado)
-    │   ├── dataset_campos_map.json    # Mapeamento de colunas para campos
-    │   └── downloads/                 # CSVs temporários (ignorar no git)
-    └── docs/
-        ├── README.md
-        └── DicionarioDatasetsANEEL.md
-Instruções de Execução
-Clone o repositório:
+youon-inteligence/
+├── apps/
+│   ├── backend/
+│   │   ├── src/
+│   │   │   ├── api/
+│   │   │   │   └── cni/
+│   │   │   ├── controllers/
+│   │   │   │   └── cni/
+│   │   │   ├── services/
+│   │   │   ├── jobs/
+│   │   │   │   ├── importLeadBruto.job.ts
+│   │   │   │   ├── importEnergiaDemanda.job.ts
+│   │   │   │   ├── importQualidade.job.ts
+│   │   │   │   ├── enrichLeads.job.ts
+│   │   │   │   └── classifyLeads.job.ts
+│   │   │   ├── middlewares/
+│   │   │   ├── utils/
+│   │   │   ├── database/
+│   │   │   └── server.ts
+│   │   ├── prisma/
+│   │   ├── data/
+│   │   └── docs/
+│   └── frontend/
+│       ├── public/
+│       ├── src/
+│       │   ├── components/
+│       │   ├── pages/
+│       │   ├── services/
+│       │   ├── styles/
+│       │   └── App.tsx
+│       └── tailwind.config.ts
+🚀 Pipeline de Execução
+Todos os scripts abaixo devem ser executados em ordem sequencial para garantir integridade.
 
+importLeadBruto.job.ts
+
+Importa dados de identificação da unidade consumidora.
+
+importEnergiaDemanda.job.ts
+
+Insere dados mensais de energia e demanda.
+
+importQualidade.job.ts
+
+Insere indicadores de qualidade (DIC, FIC, sem rede).
+
+enrichLeads.job.ts
+
+Enriquecimento via APIs externas.
+
+classifyLeads.job.ts
+
+Classificação por perfil de prioridade.
+
+📦 Instalação e Execução
 bash
 Copiar
 Editar
 git clone https://github.com/GuilhermeCostaProenca/youon-inteligence.git
-cd youon-inteligence/apps/backend
-Crie o arquivo .env com a seguinte estrutura:
+cd apps/backend
 
-env
-Copiar
-Editar
-DATABASE_URL="file:./dev.db" # ou URL PostgreSQL em produção
+# .env com:
+DATABASE_URL="file:./dev.db" # ou PostgreSQL URL
 GOOGLE_API_KEY=...
 CNPJ_API_KEY=...
-Instale as dependências:
 
-bash
-Copiar
-Editar
 npm install
-Execute a API:
-
-bash
-Copiar
-Editar
 npm run dev
-Execute os scripts na ordem:
 
-bash
-Copiar
-Editar
+# Execução dos scripts em ordem
 npx tsx src/jobs/importLeadBruto.job.ts
 npx tsx src/jobs/importEnergiaDemanda.job.ts
 npx tsx src/jobs/importQualidade.job.ts
 npx tsx src/jobs/enrichLeads.job.ts
 npx tsx src/jobs/classifyLeads.job.ts
-Dicionário dos Datasets ANEEL
-Dataset	Origem	Tipo de Unidade	Sigla	Link Direto
-UCAT_tab	ANEEL – BDGD	Alta Tensão – Empresas	C&I	https://dados.aneel.gov.br/dataset/ucat
-UCMT_tab	ANEEL – BDGD	Média Tensão	C&I	https://dados.aneel.gov.br/dataset/ucmt
-UCBT_tab	ANEEL – BDGD	Baixa Tensão	C&I	https://dados.aneel.gov.br/dataset/ucbt
+📚 Dicionário dos Datasets ANEEL
+Dataset	Segmento	Tensão	Sigla	Link
+UCAT_tab	C&I	Alta	UCAT	Link ANEEL
+UCMT_tab	C&I	Média	UCMT	Link ANEEL
+UCBT_tab	C&I	Baixa	UCBT	Link ANEEL
 
-Todos os arquivos possuem colunas como: COD_ID_ENCR, CLAS_SUB, GRU_TAR, TIP_CC, DIST, MUN, CNPJ, etc.
+Campos comuns: COD_ID_ENCR, CLAS_SUB, GRU_TAR, TIP_CC, DIST, MUN, CNPJ, etc.
 
-Requisitos Técnicos
-Node.js v18+
+🛠 Requisitos Técnicos
+Node.js 18+
 
-PostgreSQL (desenvolvimento em SQLite, produção PostgreSQL)
+Prisma ORM
 
-Prisma como ORM
+SQLite (dev) e PostgreSQL (produção)
 
-React/Next.js (frontend, futuro)
+React + Tailwind (frontend)
 
-API externa: CNPJá, Google Maps API (geocoding, place details)
+APIs: CNPJá, Google Maps
 
-Orquestração: Pipeline manual ou agendado via CRON
+CRON jobs ou scripts agendados
 
-Futuro do Projeto
-Integração com segmentos Home e GTD
+🧭 Timeline de Desenvolvimento
+✅ Fase 1: Setup Base
+Estrutura monorepo e pastas
 
-Mapa interativo com leads filtráveis por região e prioridade
+Tabelas Prisma: LeadBruto, LeadEnergia, LeadDemanda, LeadQualidade, LeadEnriquecido
 
-Dashboard comercial e técnico (gráficos, indicadores, relatórios)
+Configuração SQLite
 
-API REST completa com autenticação
+📥 Fase 2: Importação ANEEL
+Scripts importLeadBruto, importEnergiaDemanda, importQualidade
 
-Deploy Azure + monitoramento
+Validação de duplicatas e erros
 
-Algoritmo de sugestão de solução ideal por lead
+🔗 Fase 3: Enriquecimento Inteligente
+APIs externas para CNPJ, CNAE, endereço
 
-Machine Learning para predição de conversão e perfil
+Fallbacks e tratamento de erros
 
-Desenvolvedor Responsável
+🔥 Fase 4: Classificação de Leads
+Algoritmo de HOT/WARM/COLD
+
+Regras baseadas em consumo, qualidade, perfil econômico
+
+🔌 Fase 5: API REST
+Endpoints: /leads, /lead/:id, filtros e paginação
+
+Swagger ou Postman
+
+🧭 Fase 6: Frontend React
+Mapa interativo com filtros
+
+Cards de lead com dados técnicos
+
+Tela detalhada de oportunidades
+
+📡 Fase 7: Produção & Escalabilidade
+PostgreSQL na Azure
+
+Agendamento de jobs
+
+Monitoramento e logging
+
+🎯 Fase 8: Evolução & Versão 2.0
+Docker + Deploy
+
+LGPD compliance
+
+Machine Learning para recomendação de solução
+
+👨‍💻 Desenvolvedor Responsável
 Guilherme Costa Proença
+GitHub
 
-Se tiver dúvidas, sugestões ou quiser contribuir, entre em contato!
-
-
-Timeline de Desenvolvimento – Youon Intelligence
-Fase 1: Estruturação Base (Arquitetura e Setup)
-Objetivo: Deixar o projeto organizado, escalável e com base sólida antes de crescer.
-
- Criar estrutura de pastas definitiva (seguindo o README)
-
- Definir todas as tabelas no Prisma (LeadBruto, LeadEnergia, LeadDemanda, LeadQualidade, LeadEnriquecido)
-
- Documentar o dicionário de datasets da ANEEL
-
- Organizar scripts em /jobs/ e utilitários em /utils/
-
- Criar e preencher .env com variáveis seguras
-
- Configurar Prisma (migrate + client) com SQLite local (pré-Postgres)
-
-Fase 2: Pipeline ANEEL (Importação de Dados Públicos)
-Objetivo: Coletar, organizar e armazenar todos os dados oficiais.
-
- importLeadBruto.job.ts – Baixar os CSVs e importar leads brutos (UCAT, UCMT, UCBT)
-
- importEnergiaDemanda.job.ts – Importar dados de energia e demanda mensal
-
- importQualidade.job.ts – Importar DIC, FIC e outros indicadores técnicos
-
- Validação de duplicatas e qualidade de dados (logar erros)
-
-Fase 3: Enriquecimento Inteligente (APIs Externas)
-Objetivo: Dar contexto e informação útil ao lead bruto.
-
- enrichLeads.job.ts – Buscar CNPJ, nome fantasia, CNAE, endereço completo
-
- Criar serviço para Google Maps (nome de estabelecimento, tipo de negócio)
-
- Criar estrutura de fallback para dados incompletos (ex: CNPJ inválido)
-
- Atualizar status dos leads enriquecidos
-
-Fase 4: Classificação Estratégica dos Leads
-Objetivo: Priorizar oportunidades para o time comercial com base em perfil.
-
- classifyLeads.job.ts – Aplicar lógica de classificação (HOT/WARM/COLD)
-
- Criar regras baseadas em: consumo, demanda, qualidade, tipo de negócio
-
- Criar tabela ou campo classificacao no lead
-
- Gerar relatório de leads classificados por região
-
-Fase 5: API REST + Visualização
-Objetivo: Expor dados ao front-end e montar interface de uso real.
-
- Criar rotas REST com filtros e paginação (GET /leads, /lead/:id)
-
- Endpoint consolidado com dados enriquecidos e indicadores
-
- Aplicar CORS, logging, middleware de erro
-
- Configurar Swagger ou Postman collection
-
-Fase 6: Front-end com React/Next.js
-Objetivo: Visualizar tudo de forma interativa e usável.
-
- Setup do front-end (apps/frontend)
-
- Tela de dashboard com mapa interativo
-
- Filtros por classificação, cidade, distribuidora, segmento
-
- Telas de lead individual com dados técnicos e sugestões
-
-Fase 7: Produção e Escalabilidade
-Objetivo: Tornar a plataforma utilizável em escala real.
-
- Migrar banco para PostgreSQL (Azure)
-
- Rodar jobs por agendador (CRON ou agendador interno)
-
- Automatizar limpeza de dados antigos/desnecessários
-
- Estudar Machine Learning para previsão e recomendação
-
- Conformidade com LGPD (restrições, segurança, criptografia)
-
-Fase 8: Entrega e Evolução
-Objetivo: Manter, escalar, documentar e impressionar.
-
- Finalizar documentação técnica e instruções de uso
-
- Gravar vídeo de apresentação ou preparar pitch deck
-
- Validar com engenharia e time comercial
-
- Preparar versão 2.0 com recursos extras
-
- (Opcional) Automatizar versão beta com Docker + deploy
+📎 Licença
+MIT – Livre para uso e modificação com créditos.
 
