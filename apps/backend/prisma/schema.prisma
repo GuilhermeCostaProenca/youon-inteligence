@@ -1,5 +1,7 @@
+// schema.prisma (extensao do seu modelo atual)
+
 datasource db {
-  provider = "sqlite"
+  provider = "sqlite" // ou "postgresql" no futuro
   url      = env("DATABASE_URL")
 }
 
@@ -7,11 +9,10 @@ generator client {
   provider = "prisma-client-js"
 }
 
-
 model LeadBruto {
   id                  String   @id @default(uuid())
   nomeUc              String
-  cnpj                String?         // <- Novo (futuramente com enriquecimento)
+  cnpj                String?
   classe              String
   subclasse           String?
   grupoTensao         String?
@@ -25,22 +26,80 @@ model LeadBruto {
   dataConexao         DateTime?
   dataAtualizacao     DateTime?
   dataImportacao      DateTime @default(now())
-  status              String   @default("raw")   // Ex: "raw", "enriquecido", "descartado"
-  segmento            String?                    // <- "C&I", "Home", "Agro"
-  origem              String?                    // <- "UCAT_PJ", "EQME", "GD", etc.
+  status              String   @default("raw")
+  segmento            String?
+  origem              String?
+
+  energia             LeadEnergia?
+  demanda             LeadDemanda?
+  qualidade           LeadQualidade?
 }
 
+model LeadEnergia {
+  id        String   @id @default(uuid())
+  leadId    String   @unique
+  lead      LeadBruto @relation(fields: [leadId], references: [id])
+  energia01 Float?
+  energia02 Float?
+  energia03 Float?
+  energia04 Float?
+  energia05 Float?
+  energia06 Float?
+  energia07 Float?
+  energia08 Float?
+  energia09 Float?
+  energia10 Float?
+  energia11 Float?
+  energia12 Float?
+  carInst   Float?     // Potência instalada, ex: "CAR_INST"
+}
 
+model LeadDemanda {
+  id        String   @id @default(uuid())
+  leadId    String   @unique
+  lead      LeadBruto @relation(fields: [leadId], references: [id])
+  demandaContratada Float?
+  demanda01 Float?
+  demanda02 Float?
+  demanda03 Float?
+  demanda04 Float?
+  demanda05 Float?
+  demanda06 Float?
+  demanda07 Float?
+  demanda08 Float?
+  demanda09 Float?
+  demanda10 Float?
+  demanda11 Float?
+  demanda12 Float?
+}
 
-model Distribuidora {
-  id         String   @id @default(uuid())
-  nome       String
-  regiao     String?
-  uf         String
-  cnpj       String?
-  outorga    String?
-  tipo       String?
-  grupo      String?
-  subgrupo   String?
-  classe     String?
+model LeadQualidade {
+  id        String   @id @default(uuid())
+  leadId    String   @unique
+  lead      LeadBruto @relation(fields: [leadId], references: [id])
+  dic01     Float?
+  dic02     Float?
+  dic03     Float?
+  dic04     Float?
+  dic05     Float?
+  dic06     Float?
+  dic07     Float?
+  dic08     Float?
+  dic09     Float?
+  dic10     Float?
+  dic11     Float?
+  dic12     Float?
+  fic01     Float?
+  fic02     Float?
+  fic03     Float?
+  fic04     Float?
+  fic05     Float?
+  fic06     Float?
+  fic07     Float?
+  fic08     Float?
+  fic09     Float?
+  fic10     Float?
+  fic11     Float?
+  fic12     Float?
+  semrede   Boolean?
 }

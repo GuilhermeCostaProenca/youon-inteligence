@@ -1,0 +1,41 @@
+{
+  "UCAT_tab": {
+    "id": "COD_ID_ENCR",
+    "nomeUc": "CNAE",
+    "classe": "CLAS_SUB",
+    "grupoTensao": "GRU_TAR",
+    "modalidade": "TIP_CC",
+    "codigoDistribuidora": "PN_CON",
+    "distribuidora": "DIST",
+    "municipio": "MUN",
+    "latitude": "POINT_Y",
+    "longitude": "POINT_X",
+    "dataConexao": "DAT_CON"
+  },
+  "UCMT_tab": {
+    "id": "COD_ID_ENCR",
+    "nomeUc": "CNAE",
+    "classe": "CLAS_SUB",
+    "grupoTensao": "GRU_TAR",
+    "modalidade": "TIP_CC",
+    "codigoDistribuidora": "PN_CON",
+    "distribuidora": "DIST",
+    "municipio": "MUN",
+    "latitude": "POINT_Y",
+    "longitude": "POINT_X",
+    "dataConexao": "DAT_CON"
+  },
+  "UCBT_tab": {
+    "id": "COD_ID_ENCR",
+    "nomeUc": "CNAE",
+    "classe": "CLAS_SUB",
+    "grupoTensao": "GRU_TAR",
+    "modalidade": "TIP_CC",
+    "codigoDistribuidora": "PAC",
+    "distribuidora": "DIST",
+    "municipio": "MUN",
+    "latitude": "POINT_Y",
+    "longitude": "POINT_X",
+    "dataConexao": "DAT_CON"
+  }
+}
