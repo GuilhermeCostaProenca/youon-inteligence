@@ -1,9 +1,10 @@
 // schema.prisma (extensao do seu modelo atual)
 
 datasource db {
-  provider = "sqlite" // ou "postgresql" no futuro
+  provider = "postgresql"
   url      = env("DATABASE_URL")
 }
+
 
 generator client {
   provider = "prisma-client-js"
