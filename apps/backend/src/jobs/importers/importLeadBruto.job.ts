@@ -45,9 +45,12 @@ function obterUFDoMunicipio(codMun: string): string {
 
 async function processarCSV(filePath: string, datasetNome: string, origem: string) {
   const campos = camposMap[datasetNome];
-  const content = fs.readFileSync(filePath);
-  const records = parse(content, { columns: true, skip_empty_lines: true });
-
+  const content = await fs.promises.readFile(filePath);
+  const records = parse(content, {
+  columns: true,
+  skip_empty_lines: true,
+  bom: true, // <- importante para UTF-8 com BOM
+});
   let inseridos = 0;
 
   for (const row of records) {
@@ -69,7 +72,7 @@ async function processarCSV(filePath: string, datasetNome: string, origem: strin
           distribuidora: row[campos.distribuidora] || '',
           municipio: row[campos.municipio] || '',
           estado: obterUFDoMunicipio(row[campos.municipio] || ''),
-          latitude: parseFloat(row[campos.latitude]) || undefined,
+          latitude: isNaN(parseFloat(row[campos.latitude])) ? undefined : parseFloat(row[campos.latitude]),
           longitude: parseFloat(row[campos.longitude]) || undefined,
           dataConexao: row[campos.dataConexao] ? new Date(row[campos.dataConexao]) : undefined,
           dataAtualizacao: new Date(),
