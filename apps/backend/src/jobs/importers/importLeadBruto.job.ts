@@ -1,15 +1,14 @@
-// apps/backend/scripts/importadores/importLeadBruto.ts
-
 import fs from 'fs';
 import path from 'path';
 import unzipper from 'unzipper';
 import { parse } from 'csv-parse/sync';
-import { prisma } from '../../database/prisma';
+import { prisma } from '@/database/prismaClient';
 import axios from 'axios';
-import camposMap from '../../dataset_campos_map.json';
+import camposMap from '@/../data/dataset_campos_map.json';
 
-const datasetsPath = path.resolve(__dirname, '../../datasets.json');
-const downloadsDir = path.resolve(__dirname, '../../downloads');
+
+const datasetsPath = path.resolve(__dirname, '../../../../data/datasets.json');
+const downloadsDir = path.resolve(__dirname, '../../../../data/downloads');
 
 async function baixarArquivo(url: string, nome: string): Promise<string> {
   const filePath = path.join(downloadsDir, nome);
@@ -32,7 +31,7 @@ async function extrairZip(zipPath: string): Promise<string> {
   await new Promise((res, rej) => {
     firstCsv.stream()
       .pipe(fs.createWriteStream(extractedPath))
-      .on('finish', res)
+      .on('finish', () => res(undefined))
       .on('error', rej);
   });
 
@@ -44,9 +43,9 @@ function obterUFDoMunicipio(codMun: string): string {
 }
 
 async function processarCSV(filePath: string, datasetNome: string, origem: string) {
-  const campos = camposMap[datasetNome];
-  const content = fs.readFileSync(filePath);
-  const records = parse(content, { columns: true, skip_empty_lines: true });
+  const campos = camposMap[nomeDataset];
+  const content = await fs.promises.readFile(filePath);
+  const records = parse(content, { columns: true, skip_empty_lines: true, bom: true });
 
   let inseridos = 0;
 
@@ -58,6 +57,9 @@ async function processarCSV(filePath: string, datasetNome: string, origem: strin
     if (existente) continue;
 
     try {
+      const latitude = parseFloat(row[campos.latitude]);
+      const longitude = parseFloat(row[campos.longitude]);
+
       await prisma.leadBruto.create({
         data: {
           id,
@@ -69,8 +71,8 @@ async function processarCSV(filePath: string, datasetNome: string, origem: strin
           distribuidora: row[campos.distribuidora] || '',
           municipio: row[campos.municipio] || '',
           estado: obterUFDoMunicipio(row[campos.municipio] || ''),
-          latitude: parseFloat(row[campos.latitude]) || undefined,
-          longitude: parseFloat(row[campos.longitude]) || undefined,
+          latitude: isNaN(latitude) ? undefined : latitude,
+          longitude: isNaN(longitude) ? undefined : longitude,
           dataConexao: row[campos.dataConexao] ? new Date(row[campos.dataConexao]) : undefined,
           dataAtualizacao: new Date(),
           status: 'raw',
@@ -88,7 +90,7 @@ async function processarCSV(filePath: string, datasetNome: string, origem: strin
 }
 
 async function main() {
-  const datasets = JSON.parse(fs.readFileSync(datasetsPath, 'utf-8'));
+  const datasets = JSON.parse(await fs.promises.readFile(datasetsPath, 'utf-8'));
 
   for (const ds of datasets) {
     try {
@@ -112,7 +114,7 @@ async function main() {
     }
   }
 
-  console.log('✅ Importação finalizada.');
+  console.log(`✅ Importação finalizada. Total de arquivos: ${datasets.length}`);
   process.exit(0);
 }
 

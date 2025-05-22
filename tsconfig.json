@@ -9,7 +9,19 @@
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+
+    // ✅ Permite importar JSON direto com `import foo from './arquivo.json'`
+    "resolveJsonModule": true,
+
+    // ✅ Permite usar `import X from 'modulo'` mesmo se o módulo não tiver `default`
+    "allowSyntheticDefaultImports": true,
+
+    // ✅ Permite usar o alias `@/`
+    "baseUrl": "./apps/backend/src",
+    "paths": {
+      "@/*": ["*"]
+    }
   },
   "include": ["apps/backend/src", "apps/backend/scripts"],
   "exclude": ["node_modules"]
