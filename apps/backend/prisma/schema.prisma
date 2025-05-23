@@ -1,106 +1,170 @@
-// schema.prisma (extensao do seu modelo atual)
+generator client {
+  provider = "prisma-client-js"
+}
 
 datasource db {
   provider = "postgresql"
   url      = env("DATABASE_URL")
 }
 
-
-generator client {
-  provider = "prisma-client-js"
-}
-
 model LeadBruto {
-  id                  String   @id @default(uuid())
-  nomeUc              String
-  cnpj                String?
-  classe              String
-  subclasse           String?
-  grupoTensao         String?
-  modalidade          String?
-  codigoDistribuidora String
-  distribuidora       String
-  municipio           String
-  estado              String
-  latitude            Float?
-  longitude           Float?
-  dataConexao         DateTime?
-  dataAtualizacao     DateTime?
-  dataImportacao      DateTime @default(now())
-  status              String   @default("raw")
-  segmento            String?
-  origem              String?
+  id              String   @id @default(cuid())
+  nomeUc          String?
+  cnpj            String?
+  classe          String?
+  subgrupo        String?
+  modalidade      String?
+  situacao        String?
+  grupoTensao     String?
+  tipoSistema     String?
+  origem          String
+  segmento        String
+  distribuidora   String
+  municipioIbge   String
+  subestacao      String?
+  bairro          String?
+  cep             String?
+  cnae            String?
+  dataConexao     DateTime?
+  coordenadas     Json?
+  descricao       String?
+  status          String   @default("raw")
 
-  energia             LeadEnergia?
-  demanda             LeadDemanda?
-  qualidade           LeadQualidade?
+  energia         LeadEnergia[]
+  demanda         LeadDemanda[]
+  qualidade       LeadQualidade[]
+  enriquecido     LeadEnriquecido?
+  reputacao       LeadReputacao?
+  economia        LeadEconomia?
+  geoInfo         GeoInfoLead?
+
+  @@index([cnpj])
+  @@index([classe])
+  @@index([segmento])
+  @@index([distribuidora])
+  @@index([municipioIbge])
+  @@index([subestacao])
+  @@index([cep])
+  @@index([cnae])
+  @@index([dataConexao])
+  @@index([status])
 }
 
 model LeadEnergia {
-  id        String   @id @default(uuid())
+  id        String   @id @default(cuid())
   leadId    String   @unique
-  lead      LeadBruto @relation(fields: [leadId], references: [id])
-  energia01 Float?
-  energia02 Float?
-  energia03 Float?
-  energia04 Float?
-  energia05 Float?
-  energia06 Float?
-  energia07 Float?
-  energia08 Float?
-  energia09 Float?
-  energia10 Float?
-  energia11 Float?
-  energia12 Float?
-  carInst   Float?     // Potência instalada, ex: "CAR_INST"
+  ene       Int[]
+  potencia  Float?
+  LeadBruto LeadBruto @relation(fields: [leadId], references: [id])
 }
 
 model LeadDemanda {
-  id        String   @id @default(uuid())
-  leadId    String   @unique
-  lead      LeadBruto @relation(fields: [leadId], references: [id])
-  demandaContratada Float?
-  demanda01 Float?
-  demanda02 Float?
-  demanda03 Float?
-  demanda04 Float?
-  demanda05 Float?
-  demanda06 Float?
-  demanda07 Float?
-  demanda08 Float?
-  demanda09 Float?
-  demanda10 Float?
-  demanda11 Float?
-  demanda12 Float?
+  id            String   @id @default(cuid())
+  leadId        String   @unique
+  demPonta      Int[]
+  demForaPonta  Int[]
+  LeadBruto     LeadBruto @relation(fields: [leadId], references: [id])
 }
 
 model LeadQualidade {
-  id        String   @id @default(uuid())
+  id        String   @id @default(cuid())
   leadId    String   @unique
-  lead      LeadBruto @relation(fields: [leadId], references: [id])
-  dic01     Float?
-  dic02     Float?
-  dic03     Float?
-  dic04     Float?
-  dic05     Float?
-  dic06     Float?
-  dic07     Float?
-  dic08     Float?
-  dic09     Float?
-  dic10     Float?
-  dic11     Float?
-  dic12     Float?
-  fic01     Float?
-  fic02     Float?
-  fic03     Float?
-  fic04     Float?
-  fic05     Float?
-  fic06     Float?
-  fic07     Float?
-  fic08     Float?
-  fic09     Float?
-  fic10     Float?
-  fic11     Float?
-  fic12     Float?
-  semrede   Boolean?
+  dic       Int[]
+  fic       Int[]
+  dec       Float?
+  fec       Float?
+  tensaoOk  Float?
+  LeadBruto LeadBruto @relation(fields: [leadId], references: [id])
+}
+
+model LeadEnriquecido {
+  cnpj         String   @id
+  leadId       String   @unique
+  nomeFantasia String?
+  razaoSocial  String?
+  tipo         String?
+  porte        String?
+  endereco     String?
+  cidade       String?
+  uf           String?
+  atividade    String?
+  filiais      Int?
+  LeadBruto    LeadBruto @relation(fields: [leadId], references: [id])
+}
+
+model LeadReputacao {
+  id             String   @id @default(cuid())
+  leadId         String   @unique
+  reclamacoesN1  Int?
+  reclamacoesN2  Int?
+  ouvidoria      Int?
+  iasc           Float?
+  LeadBruto      LeadBruto @relation(fields: [leadId], references: [id])
+}
+
+model LeadEconomia {
+  id                 String   @id @default(cuid())
+  leadId             String   @unique
+  tarifaMedia        Float?
+  beneficioTarifario String?
+  inadimplencia      Float?
+  perdaDistribuidora Float?
+  LeadBruto          LeadBruto @relation(fields: [leadId], references: [id])
+}
+
+model GeoInfoLead {
+  id                   String   @id @default(cuid())
+  leadId               String   @unique
+  tipoLocal            String?
+  endereco             String?
+  cidade               String?
+  estado               String?
+  nomeEstabelecimento  String?
+  LeadBruto            LeadBruto @relation(fields: [leadId], references: [id])
+}
+
+model SubestacaoInfraestrutura {
+  id                      String   @id
+  nome                    String
+  municipioIbge           String
+  capacidadeMVA           Float?
+  tensaoPrimariaKV        Float?
+  alimentadores           Int?
+  transformadores         Int?
+  temGeracaoDistribuida   Boolean?
+
+  @@index([nome])
+  @@index([municipioIbge])
+}
+
+model SubestacaoIndicadoresHistorico {
+  id               String   @id @default(cuid())
+  subestacao       String
+  municipioIbge    String
+  ano              Int
+  dicMedio         Float?
+  ficMedio         Float?
+  decMedio         Float?
+  fecMedio         Float?
+  tensaoConforme   Float?
+  iasc             Float?
+
+  @@index([subestacao])
+  @@index([municipioIbge])
+  @@index([ano])
+}
+
+model DistribuidoraPerfilHistorico {
+  id              String   @id @default(cuid())
+  distribuidora   String
+  ano             Int
+  decMedio        Float?
+  fecMedio        Float?
+  iasc            Float?
+  inadimplencia   Float?
+  tempoLigacao    Float?
+  perdas          Float?
+
+  @@index([distribuidora])
+  @@index([ano])
 }
