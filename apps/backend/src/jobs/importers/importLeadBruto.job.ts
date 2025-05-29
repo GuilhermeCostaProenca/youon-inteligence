@@ -4,32 +4,20 @@ import unzipper from 'unzipper';
 import { parse } from 'csv-parse';
 import { createReadStream } from 'fs';
 import { prisma } from '../../database/prismaClient';
-import axios from 'axios';
 import crypto from 'crypto';
 
-const camposMapPath = path.resolve(__dirname, '../../../data/dataset_campos_map.json');
-const camposMap = JSON.parse(fs.readFileSync(camposMapPath, 'utf-8'));
+// === Funções auxiliares ===
 
-const datasetsPath = path.resolve(__dirname, '../../../data/datasets.json');
-const downloadsDir = path.resolve(__dirname, '../../../data/downloads');
+function normalizarCoordenadaBDGD(raw: string): number | null {
+  if (!raw) return null;
+  const semPonto = raw.replace(/\./g, '');
+  const decimal = parseFloat(semPonto) / 1_000_000;
+  return isNaN(decimal) ? null : decimal;
+}
 
-async function extrairZip(zipPath: string): Promise<string> {
-  const directory = await unzipper.Open.file(zipPath);
-  const firstCsv = directory.files.find(file => file.path.endsWith('.csv'));
-  if (!firstCsv) throw new Error('Nenhum CSV encontrado no ZIP');
-
-  const extractedPath = path.join(downloadsDir, firstCsv.path);
-  if (fs.existsSync(extractedPath)) fs.unlinkSync(extractedPath);
-
-  await new Promise((res, rej) => {
-    firstCsv.stream()
-      .pipe(fs.createWriteStream(extractedPath))
-      .on('finish', () => res(undefined))
-      .on('error', rej);
-  });
-
-  console.log(`📦 CSV extraído: ${extractedPath}`);
-  return extractedPath;
+function normalizarCepBDGD(raw: string): string | null {
+  if (!raw) return null;
+  return raw.replace(/\D/g, '') || null;
 }
 
 function parseFloatOrNull(value: string): number | null {
@@ -106,6 +94,33 @@ async function salvarRelacionadas(id: string, row: any) {
   await Promise.allSettled(promises);
 }
 
+// === Dataset e Processamento ===
+
+const camposMapPath = path.resolve(__dirname, '../../../data/dataset_campos_map.json');
+const camposMap = JSON.parse(fs.readFileSync(camposMapPath, 'utf-8'));
+
+const datasetsPath = path.resolve(__dirname, '../../../data/datasets.json');
+const downloadsDir = path.resolve(__dirname, '../../../data/downloads');
+
+async function extrairZip(zipPath: string): Promise<string> {
+  const directory = await unzipper.Open.file(zipPath);
+  const firstCsv = directory.files.find(file => file.path.endsWith('.csv'));
+  if (!firstCsv) throw new Error('Nenhum CSV encontrado no ZIP');
+
+  const extractedPath = path.join(downloadsDir, firstCsv.path);
+  if (fs.existsSync(extractedPath)) fs.unlinkSync(extractedPath);
+
+  await new Promise((res, rej) => {
+    firstCsv.stream()
+      .pipe(fs.createWriteStream(extractedPath))
+      .on('finish', () => res(undefined))
+      .on('error', rej);
+  });
+
+  console.log(`📦 CSV extraído: ${extractedPath}`);
+  return extractedPath;
+}
+
 async function processarCSV(filePath: string, datasetNome: string, origem: string) {
   console.log(`📊 Processando dataset: ${datasetNome}`);
   const campos = camposMap[datasetNome];
@@ -121,8 +136,8 @@ async function processarCSV(filePath: string, datasetNome: string, origem: strin
         const id = row[campos.id];
         if (!id) return;
 
-        const latitude = parseFloatOrNull(row[campos.latitude]);
-        const longitude = parseFloatOrNull(row[campos.longitude]);
+        const latitude = normalizarCoordenadaBDGD(row[campos.latitude]);
+        const longitude = normalizarCoordenadaBDGD(row[campos.longitude]);
         const nomeUc = row[campos.nomeUc] || 'Desconhecido';
         const dist = row[campos.distribuidora] || '';
 
@@ -142,7 +157,7 @@ async function processarCSV(filePath: string, datasetNome: string, origem: strin
           municipio_ibge: row[campos.municipioIbge] || '',
           subestacao: row[campos.subestacao] || '',
           bairro: row[campos.bairro] || '',
-          cep: row[campos.cep] || '',
+          cep: normalizarCepBDGD(row[campos.cep]) || '',
           cnae: row[campos.cnae] || '',
           data_conexao: parseDataConexao(row[campos.dataConexao]),
           coordenadas: latitude !== null && longitude !== null ? { lat: latitude, lng: longitude } : undefined,
@@ -169,7 +184,7 @@ async function processarCSV(filePath: string, datasetNome: string, origem: strin
     });
 
     stream.on('end', () => {
-      console.log('🏋 Fim do processamento do CSV.');
+      console.log('🏁 Fim do processamento do CSV.');
       resolve();
     });
 
@@ -208,7 +223,7 @@ async function main() {
     }
 
     await processarCSV(csvPath, alvo.nome, alvo.origem);
-    console.log(`🏋 Importação de ${alvo.nome} concluída.`);
+    console.log(`✅ Importação de ${alvo.nome} concluída.`);
     process.exit(0);
   } catch (err) {
     console.error(`❌ Erro ao processar ${alvo?.nome}:`, err);
