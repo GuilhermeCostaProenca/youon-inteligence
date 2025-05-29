@@ -1,0 +1,3557 @@
+{
+  "0111-3/01": {
+    "descricao": "Cultivo de arroz"
+  },
+  "0111-3/02": {
+    "descricao": "Cultivo de milho"
+  },
+  "0111-3/03": {
+    "descricao": "Cultivo de trigo"
+  },
+  "0111-3/99": {
+    "descricao": "Cultivo de outros cereais não especificados anteriormente"
+  },
+  "0112-1/01": {
+    "descricao": "Cultivo de algodão herbáceo"
+  },
+  "0112-1/02": {
+    "descricao": "Cultivo de juta"
+  },
+  "0112-1/99": {
+    "descricao": "Cultivo de outras fibras de lavoura temporária não especificadas"
+  },
+  "0113-0/00": {
+    "descricao": "Cultivo de cana-de-açúcar"
+  },
+  "0114-8/00": {
+    "descricao": "Cultivo de fumo"
+  },
+  "0115-6/00": {
+    "descricao": "Cultivo de soja"
+  },
+  "0116-4/01": {
+    "descricao": "Cultivo de amendoim"
+  },
+  "0116-4/02": {
+    "descricao": "Cultivo de girassol"
+  },
+  "0116-4/03": {
+    "descricao": "Cultivo de mamona"
+  },
+  "0116-4/99": {
+    "descricao": "Cultivo de outras oleaginosas de lavoura temporária não"
+  },
+  "0119-9/01": {
+    "descricao": "Cultivo de abacaxi"
+  },
+  "0119-9/02": {
+    "descricao": "Cultivo de alho"
+  },
+  "0119-9/03": {
+    "descricao": "Cultivo de batata-inglesa"
+  },
+  "0119-9/04": {
+    "descricao": "Cultivo de cebola"
+  },
+  "0119-9/05": {
+    "descricao": "Cultivo de feijão"
+  },
+  "0119-9/06": {
+    "descricao": "Cultivo de mandioca"
+  },
+  "0119-9/07": {
+    "descricao": "Cultivo de melão"
+  },
+  "0119-9/08": {
+    "descricao": "Cultivo de melancia"
+  },
+  "0119-9/09": {
+    "descricao": "Cultivo de tomate rasteiro"
+  },
+  "0119-9/99": {
+    "descricao": "Cultivo de outras plantas de lavoura temporária não especificadas"
+  },
+  "0121-1/01": {
+    "descricao": "Horticultura, exceto morango"
+  },
+  "0121-1/02": {
+    "descricao": "Cultivo de morango"
+  },
+  "0122-9/00": {
+    "descricao": "Cultivo de flores e plantas ornamentais"
+  },
+  "0131-8/00": {
+    "descricao": "Cultivo de laranja"
+  },
+  "0132-6/00": {
+    "descricao": "Cultivo de uva"
+  },
+  "0133-4/01": {
+    "descricao": "Cultivo de açaí"
+  },
+  "0133-4/02": {
+    "descricao": "Cultivo de banana"
+  },
+  "0133-4/03": {
+    "descricao": "Cultivo de caju"
+  },
+  "0133-4/04": {
+    "descricao": "Cultivo de cítricos, exceto laranja"
+  },
+  "0133-4/05": {
+    "descricao": "Cultivo de coco-da-baía"
+  },
+  "0133-4/06": {
+    "descricao": "Cultivo de guaraná"
+  },
+  "0133-4/07": {
+    "descricao": "Cultivo de maçã"
+  },
+  "0133-4/08": {
+    "descricao": "Cultivo de mamão"
+  },
+  "0133-4/09": {
+    "descricao": "Cultivo de maracujá"
+  },
+  "0133-4/10": {
+    "descricao": "Cultivo de manga"
+  },
+  "0133-4/11": {
+    "descricao": "Cultivo de pêssego"
+  },
+  "0133-4/99": {
+    "descricao": "Cultivo de frutas de lavoura permanente não especificadas"
+  },
+  "0134-2/00": {
+    "descricao": "Cultivo de café"
+  },
+  "0135-1/00": {
+    "descricao": "Cultivo de cacau"
+  },
+  "0139-3/01": {
+    "descricao": "Cultivo de chá-da-índia"
+  },
+  "0139-3/02": {
+    "descricao": "Cultivo de erva-mate"
+  },
+  "0139-3/03": {
+    "descricao": "Cultivo de pimenta-do-reino"
+  },
+  "0139-3/04": {
+    "descricao": "Cultivo de plantas para condimento, exceto pimenta-do-reino"
+  },
+  "0139-3/05": {
+    "descricao": "0139-3/06 Cultivo de seringueira"
+  },
+  "0139-3/99": {
+    "descricao": "0141-5/01"
+  },
+  "0141-5/02": {
+    "descricao": "0142-3/00"
+  },
+  "0151-2/01": {
+    "descricao": "Criação de bovinos para corte"
+  },
+  "0151-2/02": {
+    "descricao": "Criação de bovinos para leite"
+  },
+  "0151-2/03": {
+    "descricao": "Criação de bovinos, exceto para corte e leite"
+  },
+  "0152-1/01": {
+    "descricao": "Criação de bufalinos"
+  },
+  "0152-1/02": {
+    "descricao": "Criação de eqüinos"
+  },
+  "0152-1/03": {
+    "descricao": "Criação de asininos e muares"
+  },
+  "0153-9/01": {
+    "descricao": "Criação de caprinos"
+  },
+  "0153-9/02": {
+    "descricao": "Criação de ovinos, inclusive para produção de lã"
+  },
+  "0154-7/00": {
+    "descricao": "Criação de suínos"
+  },
+  "0155-5/01": {
+    "descricao": "Criação de frangos para corte"
+  },
+  "0155-5/02": {
+    "descricao": "Produção de pintos de um dia"
+  },
+  "0155-5/03": {
+    "descricao": "Criação de outros galináceos, exceto para corte"
+  },
+  "0155-5/04": {
+    "descricao": "Criação de aves, exceto galináceos"
+  },
+  "0155-5/05": {
+    "descricao": "Produção de ovos"
+  },
+  "0159-8/01": {
+    "descricao": "Apicultura"
+  },
+  "0159-8/02": {
+    "descricao": "Criação de animais de estimação"
+  },
+  "0159-8/03": {
+    "descricao": "Criação de escargô"
+  },
+  "0159-8/04": {
+    "descricao": "Criação de bicho-da-seda"
+  },
+  "0159-8/99": {
+    "descricao": "Criação de outros animais não especificados anteriormente"
+  },
+  "0161-0/01": {
+    "descricao": "Serviço de pulverização e controle de pragas agrícolas"
+  },
+  "0161-0/02": {
+    "descricao": "Serviço de poda de árvores para lavouras"
+  },
+  "0161-0/03": {
+    "descricao": "Serviço de preparação de terreno, cultivo e colheita"
+  },
+  "0161-0/99": {
+    "descricao": "Atividades de apoio à agricultura não especificadas anteriormente"
+  },
+  "0162-8/01": {
+    "descricao": "Serviço de inseminação artificial em animais"
+  },
+  "0162-8/02": {
+    "descricao": "Serviço de tosquiamento de ovinos"
+  },
+  "0162-8/03": {
+    "descricao": "Serviço de manejo de animais"
+  },
+  "0162-8/99": {
+    "descricao": "Atividades de apoio à pecuária não especificadas anteriormente"
+  },
+  "0163-6/00": {
+    "descricao": "Atividades de pós-colheita"
+  },
+  "0170-9/00": {
+    "descricao": "Caça e serviços relacionados"
+  },
+  "0210-1/01": {
+    "descricao": "Cultivo de eucalipto"
+  },
+  "0210-1/02": {
+    "descricao": "Cultivo de acácia-negra"
+  },
+  "0210-1/03": {
+    "descricao": "Cultivo de pinus"
+  },
+  "0210-1/04": {
+    "descricao": "Cultivo de teca"
+  },
+  "0210-1/05": {
+    "descricao": "Cultivo de espécies madeireiras, exceto eucalipto, acácia-negra,"
+  },
+  "0210-1/06": {
+    "descricao": "Cultivo de mudas em viveiros florestais"
+  },
+  "0210-1/07": {
+    "descricao": "Extração de madeira em florestas plantadas"
+  },
+  "0210-1/08": {
+    "descricao": "Produção de carvão vegetal - florestas plantadas"
+  },
+  "0210-1/09": {
+    "descricao": "Produção de casca de acácia-negra - florestas plantadas"
+  },
+  "0210-1/99": {
+    "descricao": "Produção de produtos não-madeireiros não especificados"
+  },
+  "0220-9/01": {
+    "descricao": "Extração de madeira em florestas nativas"
+  },
+  "0220-9/02": {
+    "descricao": "Produção de carvão vegetal - florestas nativas"
+  },
+  "0220-9/03": {
+    "descricao": "Coleta de castanha-do-pará em florestas nativas"
+  },
+  "0220-9/04": {
+    "descricao": "Coleta de látex em florestas nativas"
+  },
+  "0220-9/05": {
+    "descricao": "Coleta de palmito em florestas nativas"
+  },
+  "0220-9/06": {
+    "descricao": "Conservação de florestas nativas"
+  },
+  "0220-9/99": {
+    "descricao": "Coleta de produtos não-madeireiros não especificados"
+  },
+  "0230-6/00": {
+    "descricao": "Atividades de apoio à produção florestal"
+  },
+  "0311-6/01": {
+    "descricao": "Pesca de peixes em água salgada"
+  },
+  "0311-6/02": {
+    "descricao": "Pesca de crustáceos e moluscos em água salgada"
+  },
+  "0311-6/03": {
+    "descricao": "Coleta de outros produtos marinhos"
+  },
+  "0311-6/04": {
+    "descricao": "Atividades de apoio à pesca em água salgada"
+  },
+  "0312-4/01": {
+    "descricao": "Pesca de peixes em água doce"
+  },
+  "0312-4/02": {
+    "descricao": "Pesca de crustáceos e moluscos em água doce"
+  },
+  "0312-4/03": {
+    "descricao": "Coleta de outros produtos aquáticos de água doce"
+  },
+  "0312-4/04": {
+    "descricao": "Atividades de apoio à pesca em água doce"
+  },
+  "0321-3/01": {
+    "descricao": "Criação de peixes em água salgada e salobra"
+  },
+  "0321-3/02": {
+    "descricao": "Criação de camarões em água salgada e salobra"
+  },
+  "0321-3/03": {
+    "descricao": "Criação de ostras e mexilhões em água salgada e salobra"
+  },
+  "0321-3/04": {
+    "descricao": "Criação de peixes ornamentais em água salgada e salobra"
+  },
+  "0321-3/05": {
+    "descricao": "Atividades de apoio à aqüicultura em água salgada e salobra"
+  },
+  "0321-3/99": {
+    "descricao": "Cultivos e semicultivos da aqüicultura em água salgada e salobra"
+  },
+  "0322-1/01": {
+    "descricao": "Criação de peixes em água doce"
+  },
+  "0322-1/02": {
+    "descricao": "Criação de camarões em água doce"
+  },
+  "0322-1/03": {
+    "descricao": "Criação de ostras e mexilhões em água doce"
+  },
+  "0322-1/04": {
+    "descricao": "Criação de peixes ornamentais em água doce"
+  },
+  "0322-1/05": {
+    "descricao": "Ranicultura"
+  },
+  "0322-1/06": {
+    "descricao": "Criação de jacaré"
+  },
+  "0322-1/07": {
+    "descricao": "Atividades de apoio à aqüicultura em água doce"
+  },
+  "0322-1/99": {
+    "descricao": "Cultivos e semicultivos da aqüicultura em água doce não"
+  },
+  "0500-3/01": {
+    "descricao": "Extração de carvão mineral"
+  },
+  "0500-3/02": {
+    "descricao": "Beneficiamento de carvão mineral"
+  },
+  "0600-0/01": {
+    "descricao": "Extração de petróleo e gás natural"
+  },
+  "0600-0/02": {
+    "descricao": "Extração e beneficiamento de xisto"
+  },
+  "0600-0/03": {
+    "descricao": "Extração e beneficiamento de areias betuminosas"
+  },
+  "0710-3/01": {
+    "descricao": "Extração de minério de ferro"
+  },
+  "0710-3/02": {
+    "descricao": "Pelotização, sinterização e outros beneficiamentos de minério de"
+  },
+  "0721-9/01": {
+    "descricao": "Extração de minério de alumínio"
+  },
+  "0721-9/02": {
+    "descricao": "Beneficiamento de minério de alumínio"
+  },
+  "0722-7/01": {
+    "descricao": "Extração de minério de estanho"
+  },
+  "0722-7/02": {
+    "descricao": "Beneficiamento de minério de estanho"
+  },
+  "0723-5/01": {
+    "descricao": "Extração de minério de manganês"
+  },
+  "0723-5/02": {
+    "descricao": "Beneficiamento de minério de manganês"
+  },
+  "0724-3/01": {
+    "descricao": "Extração de minério de metais preciosos"
+  },
+  "0724-3/02": {
+    "descricao": "Beneficiamento de minério de metais preciosos"
+  },
+  "0725-1/00": {
+    "descricao": "Extração de minerais radioativos"
+  },
+  "0729-4/01": {
+    "descricao": "Extração de minérios de nióbio e titânio"
+  },
+  "0729-4/02": {
+    "descricao": "Extração de minério de tungstênio"
+  },
+  "0729-4/03": {
+    "descricao": "Extração de minério de níquel"
+  },
+  "0729-4/04": {
+    "descricao": "0729-4/05"
+  },
+  "0810-0/01": {
+    "descricao": "Extração de ardósia e beneficiamento associado"
+  },
+  "0810-0/02": {
+    "descricao": "Extração de granito e beneficiamento associado"
+  },
+  "0810-0/03": {
+    "descricao": "Extração de mármore e beneficiamento associado"
+  },
+  "0810-0/04": {
+    "descricao": "Extração de calcário e dolomita e beneficiamento associado"
+  },
+  "0810-0/05": {
+    "descricao": "Extração de gesso e caulim"
+  },
+  "0810-0/06": {
+    "descricao": "Extração de areia, cascalho ou pedregulho e beneficiamento"
+  },
+  "0810-0/07": {
+    "descricao": "Extração de argila e beneficiamento associado"
+  },
+  "0810-0/08": {
+    "descricao": "Extração de saibro e beneficiamento associado"
+  },
+  "0810-0/09": {
+    "descricao": "Extração de basalto e beneficiamento associado"
+  },
+  "0810-0/10": {
+    "descricao": "Beneficiamento de gesso e caulim associado à extração"
+  },
+  "0810-0/99": {
+    "descricao": "0891-6/00"
+  },
+  "0892-4/01": {
+    "descricao": "Extração de sal marinho"
+  },
+  "0892-4/02": {
+    "descricao": "Extração de sal-gema"
+  },
+  "0892-4/03": {
+    "descricao": "Refino e outros tratamentos do sal"
+  },
+  "0893-2/00": {
+    "descricao": "Extração de gemas (pedras preciosas e semipreciosas)"
+  },
+  "0899-1/01": {
+    "descricao": "Extração de grafita"
+  },
+  "0899-1/02": {
+    "descricao": "Extração de quartzo"
+  },
+  "0899-1/03": {
+    "descricao": "Extração de amianto"
+  },
+  "0899-1/99": {
+    "descricao": "Extração de outros minerais não-metálicos não especificados"
+  },
+  "0910-6/00": {
+    "descricao": "Atividades de apoio à extração de petróleo e gás natural"
+  },
+  "0990-4/01": {
+    "descricao": "Atividades de apoio à extração de minério de ferro"
+  },
+  "0990-4/02": {
+    "descricao": "Atividades de apoio à extração de minerais metálicos não-ferrosos"
+  },
+  "0990-4/03": {
+    "descricao": "Atividades de apoio à extração de minerais não-metálicos"
+  },
+  "1011-2/01": {
+    "descricao": "Frigorífico - abate de bovinos"
+  },
+  "1011-2/02": {
+    "descricao": "Frigorífico - abate de eqüinos"
+  },
+  "1011-2/03": {
+    "descricao": "Frigorífico - abate de ovinos e caprinos"
+  },
+  "1011-2/04": {
+    "descricao": "Frigorífico - abate de bufalinos"
+  },
+  "1011-2/05": {
+    "descricao": "Matadouro - abate de reses sob contrato, exceto abate de suínos"
+  },
+  "1012-1/01": {
+    "descricao": "Abate de aves"
+  },
+  "1012-1/02": {
+    "descricao": "Abate de pequenos animais"
+  },
+  "1012-1/03": {
+    "descricao": "Frigorífico - abate de suínos"
+  },
+  "1012-1/04": {
+    "descricao": "Matadouro - abate de suínos sob contrato"
+  },
+  "1013-9/01": {
+    "descricao": "Fabricação de produtos de carne"
+  },
+  "1013-9/02": {
+    "descricao": "Preparação de subprodutos do abate"
+  },
+  "1020-1/01": {
+    "descricao": "Preservação de peixes, crustáceos e moluscos"
+  },
+  "1020-1/02": {
+    "descricao": "Fabricação de conservas de peixes, crustáceos e moluscos"
+  },
+  "1031-7/00": {
+    "descricao": "Fabricação de conservas de frutas"
+  },
+  "1032-5/01": {
+    "descricao": "Fabricação de conservas de palmito"
+  },
+  "1032-5/99": {
+    "descricao": "Fabricação de conservas de legumes e outros vegetais, exceto"
+  },
+  "1033-3/01": {
+    "descricao": "Fabricação de sucos concentrados de frutas, hortaliças e legumes"
+  },
+  "1033-3/02": {
+    "descricao": "Fabricação de sucos de frutas, hortaliças e legumes, exceto"
+  },
+  "1041-4/00": {
+    "descricao": "Fabricação de óleos vegetais em bruto, exceto óleo de milho"
+  },
+  "1042-2/00": {
+    "descricao": "Fabricação de óleos vegetais refinados, exceto óleo de milho"
+  },
+  "1043-1/00": {
+    "descricao": "Fabricação de margarina e outras gorduras vegetais e de óleos"
+  },
+  "1051-1/00": {
+    "descricao": "Preparação do leite"
+  },
+  "1052-0/00": {
+    "descricao": "Fabricação de laticínios"
+  },
+  "1053-8/00": {
+    "descricao": "Fabricação de sorvetes e outros gelados comestíveis"
+  },
+  "1061-9/01": {
+    "descricao": "Beneficiamento de arroz"
+  },
+  "1061-9/02": {
+    "descricao": "Fabricação de produtos do arroz"
+  },
+  "1062-7/00": {
+    "descricao": "Moagem de trigo e fabricação de derivados"
+  },
+  "1063-5/00": {
+    "descricao": "Fabricação de farinha de mandioca e derivados"
+  },
+  "1064-3/00": {
+    "descricao": "Fabricação de farinha de milho e derivados, exceto óleos de milho"
+  },
+  "1065-1/01": {
+    "descricao": "Fabricação de amidos e féculas de vegetais"
+  },
+  "1065-1/02": {
+    "descricao": "Fabricação de óleo de milho em bruto"
+  },
+  "1065-1/03": {
+    "descricao": "Fabricação de óleo de milho refinado"
+  },
+  "1066-0/00": {
+    "descricao": "Fabricação de alimentos para animais"
+  },
+  "1069-4/00": {
+    "descricao": "Moagem e fabricação de produtos de origem vegetal não"
+  },
+  "1071-6/00": {
+    "descricao": "Fabricação de açúcar em bruto"
+  },
+  "1072-4/01": {
+    "descricao": "Fabricação de açúcar de cana refinado"
+  },
+  "1072-4/02": {
+    "descricao": "Fabricação de açúcar de cereais (dextrose) e de beterraba"
+  },
+  "1081-3/01": {
+    "descricao": "Beneficiamento de café"
+  },
+  "1081-3/02": {
+    "descricao": "Torrefação e moagem de café"
+  },
+  "1082-1/00": {
+    "descricao": "Fabricação de produtos à base de café"
+  },
+  "1091-1/00": {
+    "descricao": "Fabricação de produtos de panificação"
+  },
+  "1092-9/00": {
+    "descricao": "Fabricação de biscoitos e bolachas"
+  },
+  "1093-7/01": {
+    "descricao": "Fabricação de produtos derivados do cacau e de chocolates"
+  },
+  "1093-7/02": {
+    "descricao": "Fabricação de frutas cristalizadas, balas e semelhantes"
+  },
+  "1094-5/00": {
+    "descricao": "Fabricação de massas alimentícias"
+  },
+  "1095-3/00": {
+    "descricao": "Fabricação de especiarias, molhos, temperos e condimentos"
+  },
+  "1096-1/00": {
+    "descricao": "Fabricação de alimentos e pratos prontos"
+  },
+  "1099-6/01": {
+    "descricao": "Fabricação de vinagres"
+  },
+  "1099-6/02": {
+    "descricao": "Fabricação de pós alimentícios"
+  },
+  "1099-6/03": {
+    "descricao": "Fabricação de fermentos e leveduras"
+  },
+  "1099-6/04": {
+    "descricao": "Fabricação de gelo comum"
+  },
+  "1099-6/05": {
+    "descricao": "Fabricação de produtos para infusão (chá, mate, etc.)"
+  },
+  "1099-6/06": {
+    "descricao": "Fabricação de adoçantes naturais e artificiais"
+  },
+  "1099-6/99": {
+    "descricao": "Fabricação de outros produtos alimentícios não especificados"
+  },
+  "1111-9/01": {
+    "descricao": "Fabricação de aguardente de cana-de-açúcar"
+  },
+  "1111-9/02": {
+    "descricao": "Fabricação de outras aguardentes e bebidas destiladas"
+  },
+  "1112-7/00": {
+    "descricao": "Fabricação de vinho"
+  },
+  "1113-5/01": {
+    "descricao": "Fabricação de malte, inclusive malte uísque"
+  },
+  "1113-5/02": {
+    "descricao": "Fabricação de cervejas e chopes"
+  },
+  "1121-6/00": {
+    "descricao": "Fabricação de águas envasadas"
+  },
+  "1122-4/01": {
+    "descricao": "Fabricação de refrigerantes"
+  },
+  "1122-4/02": {
+    "descricao": "Fabricação de chá mate e outros chás prontos para consumo"
+  },
+  "1122-4/03": {
+    "descricao": "1122-4/99"
+  },
+  "1210-7/00": {
+    "descricao": "Processamento industrial do fumo"
+  },
+  "1220-4/01": {
+    "descricao": "Fabricação de cigarros"
+  },
+  "1220-4/02": {
+    "descricao": "Fabricação de cigarrilhas e charutos"
+  },
+  "1220-4/03": {
+    "descricao": "Fabricação de filtros para cigarros"
+  },
+  "1220-4/99": {
+    "descricao": "Fabricação de outros produtos do fumo, exceto cigarros, cigarrilhas"
+  },
+  "1311-1/00": {
+    "descricao": "Preparação e fiação de fibras de algodão"
+  },
+  "1312-0/00": {
+    "descricao": "Preparação e fiação de fibras têxteis naturais, exceto algodão"
+  },
+  "1313-8/00": {
+    "descricao": "Fiação de fibras artificiais e sintéticas"
+  },
+  "1314-6/00": {
+    "descricao": "Fabricação de linhas para costurar e bordar"
+  },
+  "1321-9/00": {
+    "descricao": "Tecelagem de fios de algodão"
+  },
+  "1322-7/00": {
+    "descricao": "Tecelagem de fios de fibras têxteis naturais, exceto algodão"
+  },
+  "1323-5/00": {
+    "descricao": "Tecelagem de fios de fibras artificiais e sintéticas"
+  },
+  "1330-8/00": {
+    "descricao": "Fabricação de tecidos de malha"
+  },
+  "1340-5/01": {
+    "descricao": "1340-5/02"
+  },
+  "1340-5/99": {
+    "descricao": "Acabamentos em fios, tecidos e artefatos têxteis"
+  },
+  "1351-1/00": {
+    "descricao": "Fabricação de artefatos têxteis para uso doméstico"
+  },
+  "1352-9/00": {
+    "descricao": "Fabricação de artefatos de tapeçaria"
+  },
+  "1353-7/00": {
+    "descricao": "Fabricação de artefatos de cordoaria"
+  },
+  "1354-5/00": {
+    "descricao": "Fabricação de tecidos especiais, inclusive artefatos"
+  },
+  "1359-6/00": {
+    "descricao": "Fabricação de outros produtos têxteis não especificados"
+  },
+  "1411-8/01": {
+    "descricao": "Confecção de roupas íntimas"
+  },
+  "1411-8/02": {
+    "descricao": "Facção de roupas íntimas"
+  },
+  "1412-6/01": {
+    "descricao": "1412-6/02"
+  },
+  "1412-6/03": {
+    "descricao": "Facção de peças do vestuário, exceto roupas íntimas"
+  },
+  "1413-4/01": {
+    "descricao": "Confecção de roupas profissionais, exceto sob medida"
+  },
+  "1413-4/02": {
+    "descricao": "Confecção, sob medida, de roupas profissionais"
+  },
+  "1413-4/03": {
+    "descricao": "Facção de roupas profissionais"
+  },
+  "1414-2/00": {
+    "descricao": "Fabricação de acessórios do vestuário, exceto para segurança"
+  },
+  "1421-5/00": {
+    "descricao": "Fabricação de meias"
+  },
+  "1422-3/00": {
+    "descricao": "Fabricação de artigos do vestuário, produzidos em malharias e"
+  },
+  "1510-6/00": {
+    "descricao": "Curtimento e outras preparações de couro"
+  },
+  "1521-1/00": {
+    "descricao": "1529-7/00 Fabricação de artefatos de couro não especificados anteriormente"
+  },
+  "1531-9/01": {
+    "descricao": "Fabricação de calçados de couro"
+  },
+  "1531-9/02": {
+    "descricao": "Acabamento de calçados de couro sob contrato"
+  },
+  "1532-7/00": {
+    "descricao": "Fabricação de tênis de qualquer material"
+  },
+  "1533-5/00": {
+    "descricao": "Fabricação de calçados de material sintético"
+  },
+  "1539-4/00": {
+    "descricao": "15.4"
+  },
+  "1540-8/00": {
+    "descricao": "Fabricação de partes para calçados, de qualquer material"
+  },
+  "1610-2/01": {
+    "descricao": "Serrarias com desdobramento de madeira"
+  },
+  "1610-2/02": {
+    "descricao": "Serrarias sem desdobramento de madeira"
+  },
+  "1621-8/00": {
+    "descricao": "1622-6/01 Fabricação de casas de madeira pré-fabricadas"
+  },
+  "1622-6/02": {
+    "descricao": "Fabricação de esquadrias de madeira e de peças de madeira para"
+  },
+  "1622-6/99": {
+    "descricao": "Fabricação de outros artigos de carpintaria para construção"
+  },
+  "1623-4/00": {
+    "descricao": "Fabricação de artefatos de tanoaria e de embalagens de madeira"
+  },
+  "1629-3/01": {
+    "descricao": "Fabricação de artefatos diversos de madeira, exceto móveis"
+  },
+  "1629-3/02": {
+    "descricao": "Fabricação de artefatos diversos de cortiça, bambu, palha, vime e"
+  },
+  "1710-9/00": {
+    "descricao": "Fabricação de celulose e outras pastas para a fabricação de papel"
+  },
+  "1721-4/00": {
+    "descricao": "Fabricação de papel"
+  },
+  "1722-2/00": {
+    "descricao": "Fabricação de cartolina e papel-cartão"
+  },
+  "1731-1/00": {
+    "descricao": "Fabricação de embalagens de papel"
+  },
+  "1732-0/00": {
+    "descricao": "Fabricação de embalagens de cartolina e papel-cartão"
+  },
+  "1733-8/00": {
+    "descricao": "Fabricação de chapas e de embalagens de papelão ondulado"
+  },
+  "1741-9/01": {
+    "descricao": "Fabricação de formulários contínuos"
+  },
+  "1741-9/02": {
+    "descricao": "Fabricação de produtos de papel, cartolina, papel-cartão e papelão"
+  },
+  "1742-7/01": {
+    "descricao": "Fabricação de fraldas descartáveis"
+  },
+  "1742-7/02": {
+    "descricao": "Fabricação de absorventes higiênicos"
+  },
+  "1749-4/00": {
+    "descricao": "1742-7/99"
+  },
+  "1811-3/01": {
+    "descricao": "Impressão de jornais"
+  },
+  "1811-3/02": {
+    "descricao": "Impressão de livros, revistas e outras publicações periódicas"
+  },
+  "1812-1/00": {
+    "descricao": "Impressão de material de segurança"
+  },
+  "1813-0/01": {
+    "descricao": "Impressão de material para uso publicitário"
+  },
+  "1813-0/99": {
+    "descricao": "Impressão de material para outros usos"
+  },
+  "1821-1/00": {
+    "descricao": "Serviços de pré-impressão"
+  },
+  "1822-9/00": {
+    "descricao": "Serviços de acabamentos gráficos"
+  },
+  "1830-0/01": {
+    "descricao": "Reprodução de som em qualquer suporte"
+  },
+  "1830-0/02": {
+    "descricao": "Reprodução de vídeo em qualquer suporte"
+  },
+  "1830-0/03": {
+    "descricao": "Reprodução de software em qualquer suporte"
+  },
+  "1910-1/00": {
+    "descricao": "Coquerias"
+  },
+  "1921-7/00": {
+    "descricao": "Fabricação de produtos do refino de petróleo"
+  },
+  "1922-5/01": {
+    "descricao": "Formulação de combustíveis"
+  },
+  "1922-5/02": {
+    "descricao": "Rerrefino de óleos lubrificantes"
+  },
+  "1922-5/99": {
+    "descricao": "Fabricação de outros produtos derivados do petróleo, exceto"
+  },
+  "1931-4/00": {
+    "descricao": "Fabricação de álcool"
+  },
+  "1932-2/00": {
+    "descricao": "Fabricação de biocombustíveis, exceto álcool"
+  },
+  "2011-8/00": {
+    "descricao": "Fabricação de cloro e álcalis"
+  },
+  "2012-6/00": {
+    "descricao": "Fabricação de intermediários para fertilizantes"
+  },
+  "2013-4/00": {
+    "descricao": "Fabricação de adubos e fertilizantes"
+  },
+  "2014-2/00": {
+    "descricao": "Fabricação de gases industriais"
+  },
+  "2019-3/01": {
+    "descricao": "Elaboração de combustíveis nucleares"
+  },
+  "2019-3/99": {
+    "descricao": "Fabricação de outros produtos químicos inorgânicos não"
+  },
+  "2021-5/00": {
+    "descricao": "Fabricação de produtos petroquímicos básicos"
+  },
+  "2022-3/00": {
+    "descricao": "Fabricação de intermediários para plastificantes, resinas e fibras"
+  },
+  "2029-1/00": {
+    "descricao": "Fabricação de produtos químicos orgânicos não especificados"
+  },
+  "2031-2/00": {
+    "descricao": "Fabricação de resinas termoplásticas"
+  },
+  "2032-1/00": {
+    "descricao": "Fabricação de resinas termofixas"
+  },
+  "2033-9/00": {
+    "descricao": "Fabricação de elastômeros"
+  },
+  "2040-1/00": {
+    "descricao": "Fabricação de fibras artificiais e sintéticas"
+  },
+  "2051-7/00": {
+    "descricao": "Fabricação de defensivos agrícolas"
+  },
+  "2052-5/00": {
+    "descricao": "Fabricação de desinfestantes domissanitários"
+  },
+  "2061-4/00": {
+    "descricao": "Fabricação de sabões e detergentes sintéticos"
+  },
+  "2062-2/00": {
+    "descricao": "Fabricação de produtos de limpeza e polimento"
+  },
+  "2063-1/00": {
+    "descricao": "Fabricação de cosméticos, produtos de perfumaria e de higiene"
+  },
+  "2071-1/00": {
+    "descricao": "Fabricação de tintas, vernizes, esmaltes e lacas"
+  },
+  "2072-0/00": {
+    "descricao": "Fabricação de tintas de impressão"
+  },
+  "2073-8/00": {
+    "descricao": "Fabricação de impermeabilizantes, solventes e produtos afins"
+  },
+  "2091-6/00": {
+    "descricao": "Fabricação de adesivos e selantes"
+  },
+  "2092-4/01": {
+    "descricao": "Fabricação de pólvoras, explosivos e detonantes"
+  },
+  "2092-4/02": {
+    "descricao": "Fabricação de artigos pirotécnicos"
+  },
+  "2092-4/03": {
+    "descricao": "Fabricação de fósforos de segurança"
+  },
+  "2093-2/00": {
+    "descricao": "Fabricação de aditivos de uso industrial"
+  },
+  "2094-1/00": {
+    "descricao": "Fabricação de catalisadores"
+  },
+  "2099-1/01": {
+    "descricao": "2099-1/99"
+  },
+  "2110-6/00": {
+    "descricao": "Fabricação de produtos farmoquímicos"
+  },
+  "2121-1/01": {
+    "descricao": "Fabricação de medicamentos alopáticos para uso humano"
+  },
+  "2121-1/02": {
+    "descricao": "Fabricação de medicamentos homeopáticos para uso humano"
+  },
+  "2121-1/03": {
+    "descricao": "Fabricação de medicamentos fitoterápicos para uso humano"
+  },
+  "2122-0/00": {
+    "descricao": "Fabricação de medicamentos para uso veterinário"
+  },
+  "2123-8/00": {
+    "descricao": "Fabricação de preparações farmacêuticas"
+  },
+  "2211-1/00": {
+    "descricao": "Fabricação de pneumáticos e de câmaras-de-ar"
+  },
+  "2212-9/00": {
+    "descricao": "Reforma de pneumáticos usados"
+  },
+  "2219-6/00": {
+    "descricao": "22.2"
+  },
+  "2221-8/00": {
+    "descricao": "Fabricação de laminados planos e tubulares de material plástico"
+  },
+  "2222-6/00": {
+    "descricao": "Fabricação de embalagens de material plástico"
+  },
+  "2223-4/00": {
+    "descricao": "2229-3/01"
+  },
+  "2229-3/02": {
+    "descricao": "Fabricação de artefatos de material plástico para usos industriais"
+  },
+  "2229-3/03": {
+    "descricao": "2229-3/99"
+  },
+  "2311-7/00": {
+    "descricao": "Fabricação de vidro plano e de segurança"
+  },
+  "2312-5/00": {
+    "descricao": "Fabricação de embalagens de vidro"
+  },
+  "2319-2/00": {
+    "descricao": "Fabricação de artigos de vidro"
+  },
+  "2320-6/00": {
+    "descricao": "Fabricação de cimento"
+  },
+  "2330-3/01": {
+    "descricao": "2330-3/02 Fabricação de artefatos de cimento para uso na construção"
+  },
+  "2330-3/03": {
+    "descricao": "Fabricação de artefatos de fibrocimento para uso na construção"
+  },
+  "2330-3/04": {
+    "descricao": "Fabricação de casas pré-moldadas de concreto"
+  },
+  "2330-3/05": {
+    "descricao": "Preparação de massa de concreto e argamassa para construção"
+  },
+  "2330-3/99": {
+    "descricao": "2341-9/00 Fabricação de produtos cerâmicos refratários"
+  },
+  "2342-7/01": {
+    "descricao": "Fabricação de azulejos e pisos"
+  },
+  "2342-7/02": {
+    "descricao": "Fabricação de artefatos de cerâmica e barro cozido para uso na"
+  },
+  "2349-4/01": {
+    "descricao": "Fabricação de material sanitário de cerâmica"
+  },
+  "2349-4/99": {
+    "descricao": "Fabricação de produtos cerâmicos não-refratários não especificados"
+  },
+  "2391-5/01": {
+    "descricao": "Britamento de pedras, exceto associado à extração"
+  },
+  "2391-5/02": {
+    "descricao": "2391-5/03"
+  },
+  "2392-3/00": {
+    "descricao": "Fabricação de cal e gesso"
+  },
+  "2399-1/01": {
+    "descricao": "2399-1/99"
+  },
+  "2411-3/00": {
+    "descricao": "Produção de ferro-gusa"
+  },
+  "2412-1/00": {
+    "descricao": "Produção de ferroligas"
+  },
+  "2421-1/00": {
+    "descricao": "Produção de semi-acabados de aço"
+  },
+  "2422-9/01": {
+    "descricao": "Produção de laminados planos de aço"
+  },
+  "2422-9/02": {
+    "descricao": "Produção de laminados planos de aços especiais"
+  },
+  "2423-7/01": {
+    "descricao": "Produção de tubos de aço sem costura"
+  },
+  "2423-7/02": {
+    "descricao": "Produção de laminados longos de aço, exceto tubos"
+  },
+  "2424-5/01": {
+    "descricao": "Produção de arames de aço"
+  },
+  "2424-5/02": {
+    "descricao": "Produção de relaminados, trefilados e perfilados de aço, exceto"
+  },
+  "2431-8/00": {
+    "descricao": "Produção de tubos de aço com costura"
+  },
+  "2439-3/00": {
+    "descricao": "Produção de outros tubos de ferro e aço"
+  },
+  "2441-5/01": {
+    "descricao": "Produção de alumínio e suas ligas em formas primárias"
+  },
+  "2441-5/02": {
+    "descricao": "Produção de laminados de alumínio"
+  },
+  "2442-3/00": {
+    "descricao": "Metalurgia dos metais preciosos"
+  },
+  "2443-1/00": {
+    "descricao": "Metalurgia do cobre"
+  },
+  "2449-1/01": {
+    "descricao": "Produção de zinco em formas primárias"
+  },
+  "2449-1/02": {
+    "descricao": "Produção de laminados de zinco"
+  },
+  "2449-1/03": {
+    "descricao": "Produção de soldas e ânodos para galvanoplastia"
+  },
+  "2449-1/99": {
+    "descricao": "Metalurgia de outros metais não-ferrosos e suas ligas não"
+  },
+  "2451-2/00": {
+    "descricao": "Fundição de ferro e aço"
+  },
+  "2452-1/00": {
+    "descricao": "Fundição de metais não-ferrosos e suas ligas"
+  },
+  "2511-0/00": {
+    "descricao": "Fabricação de estruturas metálicas"
+  },
+  "2512-8/00": {
+    "descricao": "Fabricação de esquadrias de metal"
+  },
+  "2513-6/00": {
+    "descricao": "Fabricação de obras de caldeiraria pesada"
+  },
+  "2521-7/00": {
+    "descricao": "2522-5/00"
+  },
+  "2531-4/01": {
+    "descricao": "Produção de forjados de aço"
+  },
+  "2531-4/02": {
+    "descricao": "Produção de forjados de metais não-ferrosos e suas ligas"
+  },
+  "2532-2/01": {
+    "descricao": "Produção de artefatos estampados de metal"
+  },
+  "2532-2/02": {
+    "descricao": "Metalurgia do pó"
+  },
+  "2539-0/00": {
+    "descricao": "Serviços de usinagem, solda, tratamento e revestimento em metais"
+  },
+  "2541-1/00": {
+    "descricao": "Fabricação de artigos de cutelaria"
+  },
+  "2542-0/00": {
+    "descricao": "Fabricação de artigos de serralheria, exceto esquadrias"
+  },
+  "2543-8/00": {
+    "descricao": "Fabricação de ferramentas"
+  },
+  "2550-1/01": {
+    "descricao": "2550-1/02 Fabricação de armas de fogo e munições"
+  },
+  "2591-8/00": {
+    "descricao": "Fabricação de embalagens metálicas"
+  },
+  "2592-6/01": {
+    "descricao": "Fabricação de produtos de trefilados de metal padronizados"
+  },
+  "2592-6/02": {
+    "descricao": "Fabricação de produtos de trefilados de metal, exceto padronizados"
+  },
+  "2593-4/00": {
+    "descricao": "Fabricação de artigos de metal para uso doméstico e pessoal"
+  },
+  "2599-3/01": {
+    "descricao": "Serviços de confecção de armações metálicas para a construção"
+  },
+  "2599-3/99": {
+    "descricao": "Fabricação de outros produtos de metal não especificados"
+  },
+  "2610-8/00": {
+    "descricao": "Fabricação de componentes eletrônicos"
+  },
+  "2621-3/00": {
+    "descricao": "Fabricação de equipamentos de informática"
+  },
+  "2631-1/00": {
+    "descricao": "2622-1/00 Fabricação de periféricos para equipamentos de informática"
+  },
+  "2640-0/00": {
+    "descricao": "2632-9/00"
+  },
+  "2651-5/00": {
+    "descricao": "2652-3/00 Fabricação de cronômetros e relógios"
+  },
+  "2660-4/00": {
+    "descricao": "2670-1/01"
+  },
+  "2670-1/02": {
+    "descricao": "27"
+  },
+  "2680-9/00": {
+    "descricao": "Fabricação de mídias virgens, magnéticas e ópticas"
+  },
+  "2710-4/01": {
+    "descricao": "Fabricação de geradores de corrente contínua e alternada, peças e"
+  },
+  "2710-4/03": {
+    "descricao": "Fabricação de motores elétricos, peças e acessórios"
+  },
+  "2710-4/02": {
+    "descricao": "27.2"
+  },
+  "2721-0/00": {
+    "descricao": "Fabricação de pilhas, baterias e acumuladores elétricos"
+  },
+  "2722-8/01": {
+    "descricao": "Fabricação de baterias e acumuladores para veículos automotores"
+  },
+  "2722-8/02": {
+    "descricao": "2731-7/00"
+  },
+  "2732-5/00": {
+    "descricao": "Recondicionamento de baterias e acumuladores para veículos"
+  },
+  "2733-3/00": {
+    "descricao": "Fabricação de fios, cabos e condutores elétricos isolados"
+  },
+  "2740-6/01": {
+    "descricao": "Fabricação de lâmpadas"
+  },
+  "2740-6/02": {
+    "descricao": "Fabricação de luminárias e outros equipamentos de iluminação"
+  },
+  "2751-1/00": {
+    "descricao": "2759-7/01"
+  },
+  "2759-7/99": {
+    "descricao": "2790-2/01"
+  },
+  "2790-2/02": {
+    "descricao": "Fabricação de equipamentos para sinalização e alarme"
+  },
+  "2790-2/99": {
+    "descricao": "2811-9/00"
+  },
+  "2812-7/00": {
+    "descricao": "2813-5/00"
+  },
+  "2814-3/01": {
+    "descricao": "Fabricação de compressores para uso industrial, peças e acessórios"
+  },
+  "2814-3/02": {
+    "descricao": "Fabricação de compressores para uso não-industrial, peças e"
+  },
+  "2815-1/01": {
+    "descricao": "Fabricação de rolamentos para fins industriais"
+  },
+  "2815-1/02": {
+    "descricao": "2821-6/01"
+  },
+  "2821-6/02": {
+    "descricao": "2822-4/01"
+  },
+  "2822-4/02": {
+    "descricao": "Fabricação de equipamentos de transmissão para fins industriais,"
+  },
+  "2823-2/00": {
+    "descricao": "28.24-1"
+  },
+  "2824-1/01": {
+    "descricao": "2824-1/02"
+  },
+  "2825-9/00": {
+    "descricao": "2829-1/01"
+  },
+  "2829-1/99": {
+    "descricao": "Fabricação de aparelhos e equipamentos de ar condicionado para"
+  },
+  "2831-3/00": {
+    "descricao": "Fabricação de tratores agrícolas, peças e acessórios"
+  },
+  "2832-1/00": {
+    "descricao": "2833-0/00"
+  },
+  "2840-2/00": {
+    "descricao": "Fabricação de máquinas-ferramenta, peças e acessórios"
+  },
+  "2851-8/00": {
+    "descricao": "2852-6/00"
+  },
+  "2853-4/00": {
+    "descricao": "Fabricação de tratores, peças e acessórios, exceto agrícolas"
+  },
+  "2854-2/00": {
+    "descricao": "2861-5/00"
+  },
+  "2862-3/00": {
+    "descricao": "Fabricação de máquinas e equipamentos para as indústrias de"
+  },
+  "2863-1/00": {
+    "descricao": "2864-0/00"
+  },
+  "2865-8/00": {
+    "descricao": "2866-6/00"
+  },
+  "2869-1/00": {
+    "descricao": "29"
+  },
+  "2910-7/01": {
+    "descricao": "Fabricação de automóveis, camionetas e utilitários"
+  },
+  "2910-7/02": {
+    "descricao": "Fabricação de chassis com motor para automóveis, camionetas e"
+  },
+  "2910-7/03": {
+    "descricao": "Fabricação de motores para automóveis, camionetas e utilitários"
+  },
+  "2920-4/01": {
+    "descricao": "Fabricação de caminhões e ônibus"
+  },
+  "2920-4/02": {
+    "descricao": "Fabricação de motores para caminhões e ônibus"
+  },
+  "2930-1/01": {
+    "descricao": "Fabricação de cabines, carrocerias e reboques para caminhões"
+  },
+  "2930-1/02": {
+    "descricao": "Fabricação de carrocerias para ônibus"
+  },
+  "2930-1/03": {
+    "descricao": "2941-7/00"
+  },
+  "2942-5/00": {
+    "descricao": "2943-3/00"
+  },
+  "2944-1/00": {
+    "descricao": "Fabricação de cabines, carrocerias e reboques para outros veículos"
+  },
+  "2945-0/00": {
+    "descricao": "Fabricação de material elétrico e eletrônico para veículos"
+  },
+  "2949-2/01": {
+    "descricao": "Fabricação de bancos e estofados para veículos automotores"
+  },
+  "2949-2/99": {
+    "descricao": "2950-6/00"
+  },
+  "3011-3/01": {
+    "descricao": "Construção de embarcações de grande porte"
+  },
+  "3011-3/02": {
+    "descricao": "Construção de embarcações para uso comercial e para usos"
+  },
+  "3012-1/00": {
+    "descricao": "Construção de embarcações para esporte e lazer"
+  },
+  "3031-8/00": {
+    "descricao": "Fabricação de locomotivas, vagões e outros materiais rodantes"
+  },
+  "3032-6/00": {
+    "descricao": "Fabricação de peças e acessórios para veículos ferroviários"
+  },
+  "3041-5/00": {
+    "descricao": "Fabricação de aeronaves"
+  },
+  "3042-3/00": {
+    "descricao": "Fabricação de turbinas, motores e outros componentes e peças"
+  },
+  "3050-4/00": {
+    "descricao": "Fabricação de veículos militares de combate"
+  },
+  "3091-1/00": {
+    "descricao": "Fabricação de motocicletas, peças e acessórios"
+  },
+  "3092-0/00": {
+    "descricao": "3099-7/00"
+  },
+  "3101-2/00": {
+    "descricao": "Fabricação de móveis com predominância de madeira"
+  },
+  "3102-1/00": {
+    "descricao": "Fabricação de móveis com predominância de metal"
+  },
+  "3103-9/00": {
+    "descricao": "Fabricação de móveis de outros materiais, exceto madeira e metal"
+  },
+  "3104-7/00": {
+    "descricao": "Fabricação de colchões"
+  },
+  "3211-6/01": {
+    "descricao": "Lapidação de gemas"
+  },
+  "3211-6/02": {
+    "descricao": "Fabricação de artefatos de joalheria e ourivesaria"
+  },
+  "3211-6/03": {
+    "descricao": "Cunhagem de moedas e medalhas"
+  },
+  "3212-4/00": {
+    "descricao": "Fabricação de bijuterias e artefatos semelhantes"
+  },
+  "3220-5/00": {
+    "descricao": "Fabricação de instrumentos musicais, peças e acessórios"
+  },
+  "3230-2/00": {
+    "descricao": "Fabricação de artefatos para pesca e esporte"
+  },
+  "3240-0/01": {
+    "descricao": "Fabricação de jogos eletrônicos"
+  },
+  "3240-0/02": {
+    "descricao": "3240-0/03"
+  },
+  "3240-0/99": {
+    "descricao": "3250-7/01"
+  },
+  "3250-7/02": {
+    "descricao": "3250-7/03"
+  },
+  "3250-7/04": {
+    "descricao": "Fabricação de mesas de bilhar, de sinuca e acessórios não"
+  },
+  "3250-7/05": {
+    "descricao": "Fabricação de materiais para medicina e odontologia"
+  },
+  "3250-7/06": {
+    "descricao": "Serviços de prótese dentária"
+  },
+  "3250-7/07": {
+    "descricao": "Fabricação de artigos ópticos"
+  },
+  "3250-7/08": {
+    "descricao": "Fabricação de artefatos de tecido não tecido para uso odonto-"
+  },
+  "3291-4/00": {
+    "descricao": "Fabricação de escovas, pincéis e vassouras"
+  },
+  "3292-2/01": {
+    "descricao": "Fabricação de roupas de proteção e segurança e resistentes a fogo"
+  },
+  "3292-2/02": {
+    "descricao": "Fabricação de equipamentos e acessórios para segurança pessoal"
+  },
+  "3299-0/01": {
+    "descricao": "Fabricação de guarda-chuvas e similares"
+  },
+  "3299-0/02": {
+    "descricao": "Fabricação de canetas, lápis e outros artigos para escritório"
+  },
+  "3299-0/03": {
+    "descricao": "Fabricação de letras, letreiros e placas de qualquer material, exceto"
+  },
+  "3299-0/04": {
+    "descricao": "Fabricação de painéis e letreiros luminosos"
+  },
+  "3299-0/05": {
+    "descricao": "Fabricação de aviamentos para costura"
+  },
+  "3299-0/99": {
+    "descricao": "Fabricação de produtos diversos não especificados anteriormente"
+  },
+  "3311-2/00": {
+    "descricao": "33.12-1"
+  },
+  "3312-1/01": {
+    "descricao": "3312-1/02"
+  },
+  "3312-1/03": {
+    "descricao": "Manutenção e reparação de equipamentos transmissores de"
+  },
+  "3312-1/04": {
+    "descricao": "Manutenção e reparação de equipamentos e instrumentos ópticos"
+  },
+  "3313-9/01": {
+    "descricao": "3313-9/02"
+  },
+  "3313-9/99": {
+    "descricao": "Manutenção e reparação de geradores, transformadores e motores"
+  },
+  "3314-7/01": {
+    "descricao": "Manutenção e reparação de máquinas motrizes não-elétricas"
+  },
+  "3314-7/02": {
+    "descricao": "Manutenção e reparação de equipamentos hidráulicos e"
+  },
+  "3314-7/03": {
+    "descricao": "Manutenção e reparação de válvulas industriais"
+  },
+  "3314-7/04": {
+    "descricao": "Manutenção e reparação de compressores"
+  },
+  "3314-7/05": {
+    "descricao": "3314-7/06"
+  },
+  "3314-7/07": {
+    "descricao": "3314-7/08"
+  },
+  "3314-7/09": {
+    "descricao": "3314-7/10"
+  },
+  "3314-7/11": {
+    "descricao": "Manutenção e reparação de equipamentos de transmissão para fins"
+  },
+  "3314-7/12": {
+    "descricao": "Manutenção e reparação de tratores agrícolas"
+  },
+  "3314-7/13": {
+    "descricao": "Manutenção e reparação de máquinas-ferramenta"
+  },
+  "3314-7/14": {
+    "descricao": "3314-7/15"
+  },
+  "3314-7/16": {
+    "descricao": "Manutenção e reparação de tratores, exceto agrícolas"
+  },
+  "3314-7/17": {
+    "descricao": "3314-7/18"
+  },
+  "3314-7/19": {
+    "descricao": "3314-7/20"
+  },
+  "3314-7/21": {
+    "descricao": "3314-7/22"
+  },
+  "3314-7/99": {
+    "descricao": "Manutenção e reparação de máquinas e equipamentos para as"
+  },
+  "3315-5/00": {
+    "descricao": "Manutenção e reparação de veículos ferroviários"
+  },
+  "3316-3/01": {
+    "descricao": "Manutenção e reparação de aeronaves"
+  },
+  "3316-3/02": {
+    "descricao": "Manutenção de aeronaves na pista"
+  },
+  "3317-1/01": {
+    "descricao": "Manutenção e reparação de embarcações e estruturas flutuantes"
+  },
+  "3317-1/02": {
+    "descricao": "Manutenção e reparação de embarcações para esporte e lazer"
+  },
+  "3319-8/00": {
+    "descricao": "3321-0/00 Instalação de máquinas e equipamentos industriais"
+  },
+  "3329-5/01": {
+    "descricao": "Serviços de montagem de móveis de qualquer material"
+  },
+  "3329-5/99": {
+    "descricao": "Instalação de outros equipamentos não especificados anteriormente"
+  },
+  "3511-5/00": {
+    "descricao": "Geração de energia elétrica"
+  },
+  "3512-3/00": {
+    "descricao": "Transmissão de energia elétrica"
+  },
+  "3513-1/00": {
+    "descricao": "Comércio atacadista de energia elétrica"
+  },
+  "3514-0/00": {
+    "descricao": "Distribuição de energia elétrica"
+  },
+  "3520-4/01": {
+    "descricao": "Produção de gás; processamento de gás natural"
+  },
+  "3520-4/02": {
+    "descricao": "Distribuição de combustíveis gasosos por redes urbanas"
+  },
+  "3530-1/00": {
+    "descricao": "Produção e distribuição de vapor, água quente e ar condicionado"
+  },
+  "3600-6/01": {
+    "descricao": "Captação, tratamento e distribuição de água"
+  },
+  "3600-6/02": {
+    "descricao": "Distribuição de água por caminhões"
+  },
+  "3701-1/00": {
+    "descricao": "Gestão de redes de esgoto"
+  },
+  "3702-9/00": {
+    "descricao": "Atividades relacionadas a esgoto, exceto a gestão de redes"
+  },
+  "3811-4/00": {
+    "descricao": "Coleta de resíduos não-perigosos"
+  },
+  "3812-2/00": {
+    "descricao": "Coleta de resíduos perigosos"
+  },
+  "3821-1/00": {
+    "descricao": "Tratamento e disposição de resíduos não-perigosos"
+  },
+  "3822-0/00": {
+    "descricao": "Tratamento e disposição de resíduos perigosos"
+  },
+  "3831-9/01": {
+    "descricao": "Recuperação de sucatas de alumínio"
+  },
+  "3831-9/99": {
+    "descricao": "Recuperação de materiais metálicos, exceto alumínio"
+  },
+  "3832-7/00": {
+    "descricao": "Recuperação de materiais plásticos"
+  },
+  "3839-4/01": {
+    "descricao": "Usinas de compostagem"
+  },
+  "3839-4/99": {
+    "descricao": "Recuperação de materiais não especificados anteriormente"
+  },
+  "3900-5/00": {
+    "descricao": "Descontaminação e outros serviços de gestão de resíduos"
+  },
+  "4110-7/00": {
+    "descricao": "Incorporação de empreendimentos imobiliários"
+  },
+  "4120-4/00": {
+    "descricao": "Construção de edifícios"
+  },
+  "4211-1/01": {
+    "descricao": "Construção de rodovias e ferrovias"
+  },
+  "4211-1/02": {
+    "descricao": "Pintura para sinalização em pistas rodoviárias e aeroportos"
+  },
+  "4212-0/00": {
+    "descricao": "Construção de obras-de-arte especiais"
+  },
+  "4213-8/00": {
+    "descricao": "Obras de urbanização - ruas, praças e calçadas"
+  },
+  "4221-9/01": {
+    "descricao": "4221-9/02 Construção de estações e redes de distribuição de energia elétrica"
+  },
+  "4221-9/03": {
+    "descricao": "Manutenção de redes de distribuição de energia elétrica"
+  },
+  "4221-9/04": {
+    "descricao": "Construção de estações e redes de telecomunicações"
+  },
+  "4221-9/05": {
+    "descricao": "Manutenção de estações e redes de telecomunicações"
+  },
+  "4222-7/01": {
+    "descricao": "4222-7/02 Obras de irrigação"
+  },
+  "4223-5/00": {
+    "descricao": "42.9"
+  },
+  "4291-0/00": {
+    "descricao": "Obras portuárias, marítimas e fluviais"
+  },
+  "4292-8/01": {
+    "descricao": "Montagem de estruturas metálicas"
+  },
+  "4292-8/02": {
+    "descricao": "Obras de montagem industrial"
+  },
+  "4299-5/01": {
+    "descricao": "Construção de instalações esportivas e recreativas"
+  },
+  "4299-5/99": {
+    "descricao": "Outras obras de engenharia civil não especificadas anteriormente"
+  },
+  "4311-8/01": {
+    "descricao": "Demolição de edifícios e outras estruturas"
+  },
+  "4311-8/02": {
+    "descricao": "Preparação de canteiro e limpeza de terreno"
+  },
+  "4312-6/00": {
+    "descricao": "Perfurações e sondagens"
+  },
+  "4313-4/00": {
+    "descricao": "Obras de terraplenagem"
+  },
+  "4319-3/00": {
+    "descricao": "Serviços de preparação do terreno não especificados anteriormente"
+  },
+  "4321-5/00": {
+    "descricao": "Instalação e manutenção elétrica"
+  },
+  "4322-3/01": {
+    "descricao": "Instalações hidráulicas, sanitárias e de gás"
+  },
+  "4322-3/02": {
+    "descricao": "Instalação e manutenção de sistemas centrais de ar condicionado,"
+  },
+  "4322-3/03": {
+    "descricao": "Instalações de sistema de prevenção contra incêndio"
+  },
+  "4329-1/01": {
+    "descricao": "Instalação de painéis publicitários"
+  },
+  "4329-1/02": {
+    "descricao": "4329-1/03"
+  },
+  "4329-1/04": {
+    "descricao": "Instalação de equipamentos para orientação à navegação marítima,"
+  },
+  "4329-1/05": {
+    "descricao": "Tratamentos térmicos, acústicos ou de vibração"
+  },
+  "4329-1/99": {
+    "descricao": "Outras obras de instalações em construções não especificadas"
+  },
+  "4330-4/01": {
+    "descricao": "Impermeabilização em obras de engenharia civil"
+  },
+  "4330-4/02": {
+    "descricao": "Instalação de portas, janelas, tetos, divisórias e armários embutidos"
+  },
+  "4330-4/03": {
+    "descricao": "Obras de acabamento em gesso e estuque"
+  },
+  "4330-4/04": {
+    "descricao": "Serviços de pintura de edifícios em geral"
+  },
+  "4330-4/05": {
+    "descricao": "Aplicação de revestimentos e de resinas em interiores e exteriores"
+  },
+  "4330-4/99": {
+    "descricao": "Outras obras de acabamento da construção"
+  },
+  "4391-6/00": {
+    "descricao": "Obras de fundações"
+  },
+  "4399-1/01": {
+    "descricao": "Administração de obras"
+  },
+  "4399-1/02": {
+    "descricao": "Montagem e desmontagem de andaimes e outras estruturas"
+  },
+  "4399-1/03": {
+    "descricao": "Obras de alvenaria"
+  },
+  "4399-1/04": {
+    "descricao": "Serviços de operação e fornecimento de equipamentos para"
+  },
+  "4399-1/05": {
+    "descricao": "Perfuração e construção de poços de água"
+  },
+  "4399-1/99": {
+    "descricao": "Serviços especializados para construção não especificados"
+  },
+  "4511-1/01": {
+    "descricao": "Comércio a varejo de automóveis, camionetas e utilitários novos"
+  },
+  "4511-1/02": {
+    "descricao": "Comércio a varejo de automóveis, camionetas e utilitários usados"
+  },
+  "4511-1/03": {
+    "descricao": "Comércio por atacado de automóveis, camionetas e utilitários novos"
+  },
+  "4511-1/04": {
+    "descricao": "Comércio por atacado de caminhões novos e usados"
+  },
+  "4511-1/05": {
+    "descricao": "Comércio por atacado de reboques e semi-reboques novos e"
+  },
+  "4511-1/06": {
+    "descricao": "Comércio por atacado de ônibus e microônibus novos e usados"
+  },
+  "4512-9/01": {
+    "descricao": "45.2"
+  },
+  "4512-9/02": {
+    "descricao": "Comércio sob consignação de veículos automotores"
+  },
+  "4520-0/01": {
+    "descricao": "4520-0/02"
+  },
+  "4520-0/03": {
+    "descricao": "4520-0/04 Serviços de alinhamento e balanceamento de veículos automotores"
+  },
+  "4520-0/05": {
+    "descricao": "Serviços de lavagem, lubrificação e polimento de veículos"
+  },
+  "4520-0/06": {
+    "descricao": "Serviços de borracharia para veículos automotores"
+  },
+  "4520-0/07": {
+    "descricao": "4530-7/01"
+  },
+  "4530-7/02": {
+    "descricao": "Comércio por atacado de pneumáticos e câmaras-de-ar"
+  },
+  "4530-7/03": {
+    "descricao": "4530-7/04"
+  },
+  "4530-7/05": {
+    "descricao": "Comércio a varejo de pneumáticos e câmaras-de-ar"
+  },
+  "4530-7/06": {
+    "descricao": "Representantes comerciais e agentes do comércio de peças e"
+  },
+  "4541-2/01": {
+    "descricao": "Comércio por atacado de motocicletas e motonetas"
+  },
+  "4541-2/02": {
+    "descricao": "Comércio por atacado de peças e acessórios para motocicletas e"
+  },
+  "4541-2/03": {
+    "descricao": "Comércio a varejo de motocicletas e motonetas novas"
+  },
+  "4541-2/04": {
+    "descricao": "Comércio a varejo de motocicletas e motonetas usadas"
+  },
+  "4541-2/05": {
+    "descricao": "4542-1/01"
+  },
+  "4542-1/02": {
+    "descricao": "Comércio sob consignação de motocicletas e motonetas"
+  },
+  "4543-9/00": {
+    "descricao": "Manutenção e reparação de motocicletas e motonetas"
+  },
+  "4611-7/00": {
+    "descricao": "4612-5/00"
+  },
+  "4613-3/00": {
+    "descricao": "4614-1/00"
+  },
+  "4615-0/00": {
+    "descricao": "4616-8/00"
+  },
+  "4617-6/00": {
+    "descricao": "29"
+  },
+  "4618-4/01": {
+    "descricao": "4618-4/02"
+  },
+  "4618-4/03": {
+    "descricao": "4618-4/99"
+  },
+  "4619-2/00": {
+    "descricao": "Representantes comerciais e agentes do comércio de"
+  },
+  "4621-4/00": {
+    "descricao": "Comércio atacadista de café em grão"
+  },
+  "4622-2/00": {
+    "descricao": "Comércio atacadista de soja"
+  },
+  "4623-1/01": {
+    "descricao": "Comércio atacadista de animais vivos"
+  },
+  "4623-1/02": {
+    "descricao": "Comércio atacadista de couros, lãs, peles e outros subprodutos não-"
+  },
+  "4623-1/03": {
+    "descricao": "Comércio atacadista de algodão"
+  },
+  "4623-1/04": {
+    "descricao": "Comércio atacadista de fumo em folha não beneficiado"
+  },
+  "4623-1/05": {
+    "descricao": "Comércio atacadista de cacau"
+  },
+  "4623-1/06": {
+    "descricao": "Comércio atacadista de sementes, flores, plantas e gramas"
+  },
+  "4623-1/07": {
+    "descricao": "Comércio atacadista de sisal"
+  },
+  "4623-1/08": {
+    "descricao": "Comércio atacadista de matérias-primas agrícolas com atividade de"
+  },
+  "4623-1/09": {
+    "descricao": "Comércio atacadista de alimentos para animais"
+  },
+  "4623-1/99": {
+    "descricao": "Comércio atacadista de matérias-primas agrícolas não"
+  },
+  "4631-1/00": {
+    "descricao": "Comércio atacadista de leite e laticínios"
+  },
+  "4632-0/01": {
+    "descricao": "Comércio atacadista de cereais e leguminosas beneficiados"
+  },
+  "4632-0/02": {
+    "descricao": "Comércio atacadista de farinhas, amidos e féculas"
+  },
+  "4632-0/03": {
+    "descricao": "Comércio atacadista de cereais e leguminosas beneficiados,"
+  },
+  "4633-8/02": {
+    "descricao": "Comércio atacadista de aves vivas e ovos"
+  },
+  "4633-8/01": {
+    "descricao": "46.2"
+  },
+  "4633-8/03": {
+    "descricao": "Comércio atacadista de coelhos e outros pequenos animais vivos"
+  },
+  "4634-6/01": {
+    "descricao": "Comércio atacadista de carnes bovinas e suínas e derivados"
+  },
+  "4634-6/02": {
+    "descricao": "Comércio atacadista de aves abatidas e derivados"
+  },
+  "4634-6/03": {
+    "descricao": "Comércio atacadista de pescados e frutos do mar"
+  },
+  "4634-6/99": {
+    "descricao": "Comércio atacadista de carnes e derivados de outros animais"
+  },
+  "4635-4/01": {
+    "descricao": "Comércio atacadista de água mineral"
+  },
+  "4635-4/02": {
+    "descricao": "Comércio atacadista de cerveja, chope e refrigerante"
+  },
+  "4635-4/03": {
+    "descricao": "Comércio atacadista de bebidas com atividade de fracionamento e"
+  },
+  "4635-4/99": {
+    "descricao": "Comércio atacadista de bebidas não especificadas anteriormente"
+  },
+  "4636-2/01": {
+    "descricao": "Comércio atacadista de fumo beneficiado"
+  },
+  "4636-2/02": {
+    "descricao": "Comércio atacadista de cigarros, cigarrilhas e charutos"
+  },
+  "4637-1/01": {
+    "descricao": "Comércio atacadista de café torrado, moído e solúvel"
+  },
+  "4637-1/02": {
+    "descricao": "Comércio atacadista de açúcar"
+  },
+  "4637-1/03": {
+    "descricao": "Comércio atacadista de óleos e gorduras"
+  },
+  "4637-1/04": {
+    "descricao": "Comércio atacadista de pães, bolos, biscoitos e similares"
+  },
+  "4637-1/05": {
+    "descricao": "Comércio atacadista de massas alimentícias"
+  },
+  "4637-1/06": {
+    "descricao": "Comércio atacadista de sorvetes"
+  },
+  "4637-1/07": {
+    "descricao": "4637-1/99"
+  },
+  "4639-7/01": {
+    "descricao": "Comércio atacadista de produtos alimentícios em geral"
+  },
+  "4639-7/02": {
+    "descricao": "Comércio atacadista de produtos alimentícios em geral, com"
+  },
+  "4641-9/01": {
+    "descricao": "Comércio atacadista de tecidos"
+  },
+  "4641-9/02": {
+    "descricao": "Comércio atacadista de artigos de cama, mesa e banho"
+  },
+  "4641-9/03": {
+    "descricao": "Comércio atacadista de artigos de armarinho"
+  },
+  "4642-7/01": {
+    "descricao": "4642-7/02"
+  },
+  "4643-5/01": {
+    "descricao": "Comércio atacadista de calçados"
+  },
+  "4643-5/02": {
+    "descricao": "Comércio atacadista de bolsas, malas e artigos de viagem"
+  },
+  "4644-3/01": {
+    "descricao": "Comércio atacadista de medicamentos e drogas de uso humano"
+  },
+  "4644-3/02": {
+    "descricao": "Comércio atacadista de medicamentos e drogas de uso veterinário"
+  },
+  "4645-1/01": {
+    "descricao": "4645-1/02 Comércio atacadista de próteses e artigos de ortopedia"
+  },
+  "4645-1/03": {
+    "descricao": "Comércio atacadista de produtos odontológicos"
+  },
+  "4646-0/01": {
+    "descricao": "Comércio atacadista de cosméticos e produtos de perfumaria"
+  },
+  "4646-0/02": {
+    "descricao": "Comércio atacadista de produtos de higiene pessoal"
+  },
+  "4647-8/01": {
+    "descricao": "Comércio atacadista de artigos de escritório e de papelaria"
+  },
+  "4647-8/02": {
+    "descricao": "Comércio atacadista de livros, jornais e outras publicações"
+  },
+  "4649-4/01": {
+    "descricao": "31"
+  },
+  "4649-4/02": {
+    "descricao": "4649-4/03"
+  },
+  "4649-4/04": {
+    "descricao": "Comércio atacadista de móveis e artigos de colchoaria"
+  },
+  "4649-4/05": {
+    "descricao": "Comércio atacadista de artigos de tapeçaria; persianas e cortinas"
+  },
+  "4649-4/06": {
+    "descricao": "Comércio atacadista de lustres, luminárias e abajures"
+  },
+  "4649-4/07": {
+    "descricao": "Comércio atacadista de filmes, CDs, DVDs, fitas e discos"
+  },
+  "4649-4/08": {
+    "descricao": "4649-4/09"
+  },
+  "4649-4/10": {
+    "descricao": "4649-4/99"
+  },
+  "4651-6/01": {
+    "descricao": "Comércio atacadista de equipamentos de informática"
+  },
+  "4651-6/02": {
+    "descricao": "Comércio atacadista de suprimentos para informática"
+  },
+  "4652-4/00": {
+    "descricao": "4661-3/00"
+  },
+  "4662-1/00": {
+    "descricao": "4663-0/00"
+  },
+  "4664-8/00": {
+    "descricao": "4665-6/00"
+  },
+  "4669-9/01": {
+    "descricao": "Comércio atacadista de bombas e compressores; partes e peças"
+  },
+  "4669-9/99": {
+    "descricao": "Comércio atacadista de outras máquinas e equipamentos não"
+  },
+  "4671-1/00": {
+    "descricao": "Comércio atacadista de madeira e produtos derivados"
+  },
+  "4672-9/00": {
+    "descricao": "Comércio atacadista de ferragens e ferramentas"
+  },
+  "4673-7/00": {
+    "descricao": "Comércio atacadista de material elétrico"
+  },
+  "4674-5/00": {
+    "descricao": "Comércio atacadista de cimento"
+  },
+  "4679-6/01": {
+    "descricao": "Comércio atacadista de tintas, vernizes e similares"
+  },
+  "4679-6/02": {
+    "descricao": "Comércio atacadista de mármores e granitos"
+  },
+  "4679-6/03": {
+    "descricao": "Comércio atacadista de vidros, espelhos e vitrais"
+  },
+  "4679-6/04": {
+    "descricao": "Comércio atacadista especializado de materiais de construção não"
+  },
+  "4679-6/99": {
+    "descricao": "Comércio atacadista de materiais de construção em geral"
+  },
+  "4681-8/01": {
+    "descricao": "4681-8/02"
+  },
+  "4681-8/03": {
+    "descricao": "4681-8/04 Comércio atacadista de combustíveis de origem mineral em bruto"
+  },
+  "4681-8/05": {
+    "descricao": "Comércio atacadista de lubrificantes"
+  },
+  "4682-6/00": {
+    "descricao": "Comércio atacadista de gás liqüefeito de petróleo (GLP)"
+  },
+  "4683-4/00": {
+    "descricao": "Comércio atacadista de defensivos agrícolas, adubos,"
+  },
+  "4684-2/01": {
+    "descricao": "Comércio atacadista de resinas e elastômeros"
+  },
+  "4684-2/02": {
+    "descricao": "Comércio atacadista de solventes"
+  },
+  "4684-2/99": {
+    "descricao": "4685-1/00"
+  },
+  "4686-9/01": {
+    "descricao": "Comércio atacadista de papel e papelão em bruto"
+  },
+  "4686-9/02": {
+    "descricao": "Comércio atacadista de embalagens"
+  },
+  "4687-7/01": {
+    "descricao": "Comércio atacadista de resíduos de papel e papelão"
+  },
+  "4687-7/02": {
+    "descricao": "Comércio atacadista de resíduos e sucatas não-metálicos, exceto"
+  },
+  "4687-7/03": {
+    "descricao": "Comércio atacadista de resíduos e sucatas metálicos"
+  },
+  "4689-3/01": {
+    "descricao": "4689-3/02 Comércio atacadista de fios e fibras têxteis beneficiados"
+  },
+  "4689-3/99": {
+    "descricao": "Comércio atacadista especializado em outros produtos"
+  },
+  "4691-5/00": {
+    "descricao": "4692-3/00"
+  },
+  "4693-1/00": {
+    "descricao": "4711-3/01"
+  },
+  "4711-3/02": {
+    "descricao": "4712-1/00"
+  },
+  "4713-0/01": {
+    "descricao": "Lojas de departamentos ou magazines"
+  },
+  "4713-0/02": {
+    "descricao": "Lojas de variedades, exceto lojas de departamentos ou magazines"
+  },
+  "4713-0/03": {
+    "descricao": "Lojas duty free de aeroportos internacionais"
+  },
+  "4721-1/01": {
+    "descricao": "Padaria e confeitaria com predominância de produção própria"
+  },
+  "4721-1/02": {
+    "descricao": "Padaria e confeitaria com predominância de revenda"
+  },
+  "4721-1/03": {
+    "descricao": "Comércio varejista de laticínios e frios"
+  },
+  "4721-1/04": {
+    "descricao": "Comércio varejista de doces, balas, bombons e semelhantes"
+  },
+  "4722-9/01": {
+    "descricao": "Comércio varejista de carnes - açougues"
+  },
+  "4722-9/02": {
+    "descricao": "Peixaria"
+  },
+  "4723-7/00": {
+    "descricao": "Comércio varejista de bebidas"
+  },
+  "4724-5/00": {
+    "descricao": "Comércio varejista de hortifrutigranjeiros"
+  },
+  "4729-6/01": {
+    "descricao": "Tabacaria"
+  },
+  "4729-6/99": {
+    "descricao": "Comércio varejista de produtos alimentícios em geral ou"
+  },
+  "4731-8/00": {
+    "descricao": "Comércio varejista de combustíveis para veículos automotores"
+  },
+  "4732-6/00": {
+    "descricao": "Comércio varejista de lubrificantes"
+  },
+  "4741-5/00": {
+    "descricao": "Comércio varejista de tintas e materiais para pintura"
+  },
+  "4742-3/00": {
+    "descricao": "Comércio varejista de material elétrico"
+  },
+  "4743-1/00": {
+    "descricao": "Comércio varejista de vidros"
+  },
+  "4744-0/01": {
+    "descricao": "Comércio varejista de ferragens e ferramentas"
+  },
+  "4744-0/02": {
+    "descricao": "Comércio varejista de madeira e artefatos"
+  },
+  "4744-0/03": {
+    "descricao": "Comércio varejista de materiais hidráulicos"
+  },
+  "4744-0/04": {
+    "descricao": "Comércio varejista de cal, areia, pedra britada, tijolos e telhas"
+  },
+  "4744-0/05": {
+    "descricao": "Comércio varejista de materiais de construção não especificados"
+  },
+  "4744-0/99": {
+    "descricao": "Comércio varejista de materiais de construção em geral"
+  },
+  "4751-2/00": {
+    "descricao": "4752-1/00"
+  },
+  "4753-9/00": {
+    "descricao": "Comércio varejista de equipamentos de informática e"
+  },
+  "4754-7/01": {
+    "descricao": "Comércio varejista de móveis"
+  },
+  "4754-7/02": {
+    "descricao": "Comércio varejista de artigos de colchoaria"
+  },
+  "4754-7/03": {
+    "descricao": "Comércio varejista de artigos de iluminação"
+  },
+  "4755-5/01": {
+    "descricao": "Comércio varejista de tecidos"
+  },
+  "4755-5/02": {
+    "descricao": "Comercio varejista de artigos de armarinho"
+  },
+  "4755-5/03": {
+    "descricao": "Comercio varejista de artigos de cama, mesa e banho"
+  },
+  "4756-3/00": {
+    "descricao": "4757-1/00"
+  },
+  "4759-8/01": {
+    "descricao": "Comércio varejista de artigos de tapeçaria, cortinas e persianas"
+  },
+  "4759-8/99": {
+    "descricao": "Comércio varejista de outros artigos de uso doméstico não"
+  },
+  "4761-0/01": {
+    "descricao": "Comércio varejista de livros"
+  },
+  "4761-0/02": {
+    "descricao": "Comércio varejista de jornais e revistas"
+  },
+  "4761-0/03": {
+    "descricao": "Comércio varejista de artigos de papelaria"
+  },
+  "4762-8/00": {
+    "descricao": "Comércio varejista de discos, CDs, DVDs e fitas"
+  },
+  "4763-6/01": {
+    "descricao": "Comércio varejista de brinquedos e artigos recreativos"
+  },
+  "4763-6/02": {
+    "descricao": "Comércio varejista de artigos esportivos"
+  },
+  "4763-6/03": {
+    "descricao": "Comércio varejista de bicicletas e triciclos; peças e acessórios"
+  },
+  "4763-6/04": {
+    "descricao": "Comércio varejista de artigos de caça, pesca e camping"
+  },
+  "4763-6/05": {
+    "descricao": "4771-7/01"
+  },
+  "4771-7/02": {
+    "descricao": "Comércio varejista de embarcações e outros veículos recreativos;"
+  },
+  "4771-7/03": {
+    "descricao": "Comércio varejista de produtos farmacêuticos homeopáticos"
+  },
+  "4771-7/04": {
+    "descricao": "Comércio varejista de medicamentos veterinários"
+  },
+  "4772-5/00": {
+    "descricao": "Comércio varejista de cosméticos, produtos de perfumaria e de"
+  },
+  "4773-3/00": {
+    "descricao": "Comércio varejista de artigos médicos e ortopédicos"
+  },
+  "4774-1/00": {
+    "descricao": "Comércio varejista de artigos de óptica"
+  },
+  "4781-4/00": {
+    "descricao": "Comércio varejista de artigos do vestuário e acessórios"
+  },
+  "4782-2/01": {
+    "descricao": "Comércio varejista de calçados"
+  },
+  "4782-2/02": {
+    "descricao": "Comércio varejista de artigos de viagem"
+  },
+  "4783-1/01": {
+    "descricao": "Comércio varejista de artigos de joalheria"
+  },
+  "4783-1/02": {
+    "descricao": "Comércio varejista de artigos de relojoaria"
+  },
+  "4784-9/00": {
+    "descricao": "Comércio varejista de gás liqüefeito de petróleo (GLP)"
+  },
+  "4785-7/01": {
+    "descricao": "Comércio varejista de antigüidades"
+  },
+  "4785-7/99": {
+    "descricao": "Comércio varejista de outros artigos usados"
+  },
+  "4789-0/01": {
+    "descricao": "Comércio varejista de suvenires, bijuterias e artesanatos"
+  },
+  "4789-0/02": {
+    "descricao": "Comércio varejista de plantas e flores naturais"
+  },
+  "4789-0/03": {
+    "descricao": "Comércio varejista de objetos de arte"
+  },
+  "4789-0/04": {
+    "descricao": "Comércio varejista de animais vivos e de artigos e alimentos para"
+  },
+  "4789-0/05": {
+    "descricao": "Comércio varejista de produtos saneantes domissanitários"
+  },
+  "4789-0/06": {
+    "descricao": "Comércio varejista de fogos de artifício e artigos pirotécnicos"
+  },
+  "4789-0/07": {
+    "descricao": "Comércio varejista de equipamentos para escritório"
+  },
+  "4789-0/08": {
+    "descricao": "Comércio varejista de artigos fotográficos e para filmagem"
+  },
+  "4789-0/09": {
+    "descricao": "Comércio varejista de armas e munições"
+  },
+  "4789-0/99": {
+    "descricao": "Comércio varejista de outros produtos não especificados"
+  },
+  "4911-6/00": {
+    "descricao": "Transporte ferroviário de carga"
+  },
+  "4912-4/01": {
+    "descricao": "Transporte ferroviário de passageiros intermunicipal e interestadual"
+  },
+  "4912-4/02": {
+    "descricao": "Transporte ferroviário de passageiros municipal e em região"
+  },
+  "4912-4/03": {
+    "descricao": "Transporte metroviário"
+  },
+  "4921-3/01": {
+    "descricao": "4921-3/02"
+  },
+  "4922-1/01": {
+    "descricao": "4922-1/02"
+  },
+  "4922-1/03": {
+    "descricao": "4923-0/01 Serviço de táxi"
+  },
+  "4923-0/02": {
+    "descricao": "Serviço de transporte de passageiros - locação de automóveis com"
+  },
+  "4924-8/00": {
+    "descricao": "Transporte escolar"
+  },
+  "4929-9/01": {
+    "descricao": "4929-9/02"
+  },
+  "4929-9/03": {
+    "descricao": "4929-9/04"
+  },
+  "4929-9/99": {
+    "descricao": "4930-2/01"
+  },
+  "4930-2/02": {
+    "descricao": "49.4"
+  },
+  "4930-2/03": {
+    "descricao": "Transporte rodoviário de produtos perigosos"
+  },
+  "4930-2/04": {
+    "descricao": "Transporte rodoviário de mudanças"
+  },
+  "4940-0/00": {
+    "descricao": "Transporte dutoviário"
+  },
+  "4950-7/00": {
+    "descricao": "Trens turísticos, teleféricos e similares"
+  },
+  "5011-4/01": {
+    "descricao": "Transporte marítimo de cabotagem - Carga"
+  },
+  "5011-4/02": {
+    "descricao": "Transporte marítimo de cabotagem - passageiros"
+  },
+  "5021-1/02": {
+    "descricao": "5021-1/01"
+  },
+  "5012-2/01": {
+    "descricao": "Transporte marítimo de longo curso - Carga"
+  },
+  "5012-2/02": {
+    "descricao": "Transporte marítimo de longo curso - Passageiros"
+  },
+  "5022-0/01": {
+    "descricao": "5022-0/02"
+  },
+  "5030-1/01": {
+    "descricao": "Navegação de apoio marítimo"
+  },
+  "5030-1/02": {
+    "descricao": "Navegação de apoio portuário"
+  },
+  "5091-2/01": {
+    "descricao": "Transporte por navegação de travessia, municipal"
+  },
+  "5091-2/02": {
+    "descricao": "Transporte por navegação de travessia, intermunicipal"
+  },
+  "5099-8/01": {
+    "descricao": "Transporte aquaviário para passeios turísticos"
+  },
+  "5099-8/99": {
+    "descricao": "Outros transportes aquaviários não especificados anteriormente"
+  },
+  "5111-1/00": {
+    "descricao": "Transporte aéreo de passageiros regular"
+  },
+  "5112-9/01": {
+    "descricao": "Serviço de táxi aéreo e locação de aeronaves com tripulação"
+  },
+  "5112-9/99": {
+    "descricao": "Outros serviços de transporte aéreo de passageiros não-regular"
+  },
+  "5120-0/00": {
+    "descricao": "Transporte aéreo de carga"
+  },
+  "5130-7/00": {
+    "descricao": "Transporte espacial"
+  },
+  "5211-7/01": {
+    "descricao": "Armazéns gerais - emissão de warrant"
+  },
+  "5211-7/02": {
+    "descricao": "Guarda-móveis"
+  },
+  "5211-7/99": {
+    "descricao": "Depósitos de mercadorias para terceiros, exceto armazéns gerais e"
+  },
+  "5212-5/00": {
+    "descricao": "Carga e descarga"
+  },
+  "5221-4/00": {
+    "descricao": "Concessionárias de rodovias, pontes, túneis e serviços relacionados"
+  },
+  "5222-2/00": {
+    "descricao": "Terminais rodoviários e ferroviários"
+  },
+  "5223-1/00": {
+    "descricao": "Estacionamento de veículos"
+  },
+  "5229-0/01": {
+    "descricao": "5229-0/02 Serviços de reboque de veículos"
+  },
+  "5229-0/99": {
+    "descricao": "Outras atividades auxiliares dos transportes terrestres não"
+  },
+  "5231-1/01": {
+    "descricao": "Administração da infra-estrutura portuária"
+  },
+  "5231-1/02": {
+    "descricao": "Operações de terminais"
+  },
+  "5232-0/00": {
+    "descricao": "Atividades de agenciamento marítimo"
+  },
+  "5239-7/00": {
+    "descricao": "Atividades auxiliares dos transportes aquaviários não"
+  },
+  "5240-1/01": {
+    "descricao": "Operação dos aeroportos e campos de aterrissagem"
+  },
+  "5240-1/99": {
+    "descricao": "Atividades auxiliares dos transportes aéreos, exceto operação dos"
+  },
+  "5250-8/01": {
+    "descricao": "Comissaria de despachos"
+  },
+  "5250-8/02": {
+    "descricao": "Atividades de despachantes aduaneiros"
+  },
+  "5250-8/03": {
+    "descricao": "Agenciamento de cargas, exceto para o transporte marítimo"
+  },
+  "5250-8/04": {
+    "descricao": "Organização logística do transporte de carga"
+  },
+  "5250-8/05": {
+    "descricao": "Operador de transporte multimodal - OTM"
+  },
+  "5310-5/01": {
+    "descricao": "Atividades do Correio Nacional"
+  },
+  "5310-5/02": {
+    "descricao": "Atividades de franqueadas e permissionárias do Correio Nacional"
+  },
+  "5320-2/01": {
+    "descricao": "Serviços de malote não realizados pelo Correio Nacional"
+  },
+  "5320-2/02": {
+    "descricao": "Serviços de entrega rápida"
+  },
+  "5510-8/01": {
+    "descricao": "Hotéis"
+  },
+  "5510-8/02": {
+    "descricao": "Apart-hotéis"
+  },
+  "5510-8/03": {
+    "descricao": "Motéis"
+  },
+  "5590-6/01": {
+    "descricao": "Albergues, exceto assistenciais"
+  },
+  "5590-6/02": {
+    "descricao": "Campings"
+  },
+  "5590-6/03": {
+    "descricao": "Pensões (alojamento)"
+  },
+  "5590-6/99": {
+    "descricao": "Outros alojamentos não especificados anteriormente"
+  },
+  "5611-2/01": {
+    "descricao": "Restaurantes e similares"
+  },
+  "5611-2/02": {
+    "descricao": "Bares e outros estabelecimentos especializados em servir bebidas"
+  },
+  "5611-2/03": {
+    "descricao": "Lanchonetes, casas de chá, de sucos e similares"
+  },
+  "5612-1/00": {
+    "descricao": "Serviços ambulantes de alimentação"
+  },
+  "5620-1/01": {
+    "descricao": "5620-1/02 Serviços de alimentação para eventos e recepções - bufê"
+  },
+  "5620-1/03": {
+    "descricao": "Cantinas - serviços de alimentação privativos"
+  },
+  "5620-1/04": {
+    "descricao": "Fornecimento de alimentos preparados preponderantemente para"
+  },
+  "5811-5/00": {
+    "descricao": "Edição de livros"
+  },
+  "5812-3/00": {
+    "descricao": "Edição de jornais"
+  },
+  "5813-1/00": {
+    "descricao": "Edição de revistas"
+  },
+  "5819-1/00": {
+    "descricao": "Edição de cadastros, listas e outros produtos gráficos"
+  },
+  "5821-2/00": {
+    "descricao": "Edição integrada à impressão de livros"
+  },
+  "5822-1/00": {
+    "descricao": "Edição integrada à impressão de jornais"
+  },
+  "5823-9/00": {
+    "descricao": "Edição integrada à impressão de revistas"
+  },
+  "5829-8/00": {
+    "descricao": "Edição integrada à impressão de cadastros, listas e outros"
+  },
+  "5911-1/01": {
+    "descricao": "Estúdios cinematográficos"
+  },
+  "5911-1/02": {
+    "descricao": "Produção de filmes para publicidade"
+  },
+  "5911-1/99": {
+    "descricao": "Atividades de produção cinematográfica, de vídeos e de programas"
+  },
+  "5912-0/01": {
+    "descricao": "Serviços de dublagem"
+  },
+  "5912-0/02": {
+    "descricao": "Serviços de mixagem sonora em produção audiovisual"
+  },
+  "5912-0/99": {
+    "descricao": "Atividades de pós-produção cinematográfica, de vídeos e de"
+  },
+  "5913-8/00": {
+    "descricao": "Distribuição cinematográfica, de vídeo e de programas de televisão"
+  },
+  "5914-6/00": {
+    "descricao": "Atividades de exibição cinematográfica"
+  },
+  "5920-1/00": {
+    "descricao": "Atividades de gravação de som e de edição de música"
+  },
+  "6010-1/00": {
+    "descricao": "Atividades de rádio"
+  },
+  "6021-7/00": {
+    "descricao": "Atividades de televisão aberta"
+  },
+  "6022-5/01": {
+    "descricao": "Programadoras"
+  },
+  "6022-5/02": {
+    "descricao": "Atividades relacionadas à televisão por assinatura, exceto"
+  },
+  "6110-8/01": {
+    "descricao": "Serviços de telefonia fixa comutada - STFC"
+  },
+  "6110-8/02": {
+    "descricao": "Serviços de redes de transporte de telecomunicações - SRTT"
+  },
+  "6110-8/03": {
+    "descricao": "Serviços de comunicação multimídia - SCM"
+  },
+  "6110-8/99": {
+    "descricao": "Serviços de telecomunicações por fio não especificados"
+  },
+  "6120-5/01": {
+    "descricao": "Telefonia móvel celular"
+  },
+  "6120-5/02": {
+    "descricao": "Serviço móvel especializado - SME"
+  },
+  "6120-5/99": {
+    "descricao": "Serviços de telecomunicações sem fio não especificados"
+  },
+  "6130-2/00": {
+    "descricao": "Telecomunicações por satélite"
+  },
+  "6141-8/00": {
+    "descricao": "Operadoras de televisão por assinatura por cabo"
+  },
+  "6142-6/00": {
+    "descricao": "Operadoras de televisão por assinatura por microondas"
+  },
+  "6143-4/00": {
+    "descricao": "Operadoras de televisão por assinatura por satélite"
+  },
+  "6190-6/01": {
+    "descricao": "Provedores de acesso às redes de comunicações"
+  },
+  "6190-6/02": {
+    "descricao": "Provedores de voz sobre protocolo internet - VOIP"
+  },
+  "6190-6/99": {
+    "descricao": "Outras atividades de telecomunicações não especificadas"
+  },
+  "6201-5/00": {
+    "descricao": "Desenvolvimento de programas de computador sob encomenda"
+  },
+  "6202-3/00": {
+    "descricao": "6203-1/00"
+  },
+  "6204-0/00": {
+    "descricao": "Consultoria em tecnologia da informação"
+  },
+  "6209-1/00": {
+    "descricao": "6311-9/00"
+  },
+  "6319-4/00": {
+    "descricao": "Suporte técnico, manutenção e outros serviços em tecnologia"
+  },
+  "6391-7/00": {
+    "descricao": "Agências de notícias"
+  },
+  "6399-2/00": {
+    "descricao": "Outras atividades de prestação de serviços de informação não"
+  },
+  "6410-7/00": {
+    "descricao": "Banco Central"
+  },
+  "6421-2/00": {
+    "descricao": "Bancos comerciais"
+  },
+  "6422-1/00": {
+    "descricao": "Bancos múltiplos, com carteira comercial"
+  },
+  "6423-9/00": {
+    "descricao": "Caixas econômicas"
+  },
+  "6424-7/01": {
+    "descricao": "Bancos cooperativos"
+  },
+  "6424-7/02": {
+    "descricao": "Cooperativas centrais de crédito"
+  },
+  "6424-7/03": {
+    "descricao": "Cooperativas de crédito mútuo"
+  },
+  "6424-7/04": {
+    "descricao": "Cooperativas de crédito rural"
+  },
+  "6431-0/00": {
+    "descricao": "Bancos múltiplos, sem carteira comercial"
+  },
+  "6432-8/00": {
+    "descricao": "Bancos de investimento"
+  },
+  "6433-6/00": {
+    "descricao": "Bancos de desenvolvimento"
+  },
+  "6434-4/00": {
+    "descricao": "Agências de fomento"
+  },
+  "6435-2/01": {
+    "descricao": "Sociedades de crédito imobiliário"
+  },
+  "6435-2/02": {
+    "descricao": "Associações de poupança e empréstimo"
+  },
+  "6435-2/03": {
+    "descricao": "Companhias hipotecárias"
+  },
+  "6436-1/00": {
+    "descricao": "Sociedades de crédito, financiamento e investimento - financeiras"
+  },
+  "6437-9/00": {
+    "descricao": "Sociedades de crédito ao microempreendedor"
+  },
+  "6440-9/00": {
+    "descricao": "Arrendamento mercantil"
+  },
+  "6450-6/00": {
+    "descricao": "Sociedades de capitalização"
+  },
+  "6461-1/00": {
+    "descricao": "6462-0/00"
+  },
+  "6463-8/00": {
+    "descricao": "Atividades de sociedades de participação"
+  },
+  "6470-1/01": {
+    "descricao": "Fundos de investimento, exceto previdenciários e imobiliários"
+  },
+  "6470-1/02": {
+    "descricao": "Fundos de investimento previdenciários"
+  },
+  "6470-1/03": {
+    "descricao": "Fundos de investimento imobiliários"
+  },
+  "6491-3/00": {
+    "descricao": "Atividades de serviços financeiros não especificadas"
+  },
+  "6492-1/00": {
+    "descricao": "Securitização de créditos"
+  },
+  "6493-0/00": {
+    "descricao": "Administração de consórcios para aquisição de bens e direitos"
+  },
+  "6499-9/01": {
+    "descricao": "Clubes de investimento"
+  },
+  "6499-9/02": {
+    "descricao": "Sociedades de investimento"
+  },
+  "6499-9/03": {
+    "descricao": "Fundo garantidor de crédito"
+  },
+  "6499-9/04": {
+    "descricao": "Caixas de financiamento de corporações"
+  },
+  "6499-9/05": {
+    "descricao": "Concessão de crédito pelas OSCIP"
+  },
+  "6499-9/99": {
+    "descricao": "Outras atividades de serviços financeiros não especificadas"
+  },
+  "6511-1/01": {
+    "descricao": "Seguros de vida"
+  },
+  "6511-1/02": {
+    "descricao": "Planos de auxílio-funeral"
+  },
+  "6512-0/00": {
+    "descricao": "Seguros não-vida"
+  },
+  "6520-1/00": {
+    "descricao": "Seguros-saúde"
+  },
+  "6530-8/00": {
+    "descricao": "Resseguros"
+  },
+  "6541-3/00": {
+    "descricao": "Previdência complementar fechada"
+  },
+  "6542-1/00": {
+    "descricao": "Previdência complementar aberta"
+  },
+  "6550-2/00": {
+    "descricao": "Planos de saúde"
+  },
+  "6611-8/01": {
+    "descricao": "Bolsa de valores"
+  },
+  "6611-8/02": {
+    "descricao": "Bolsa de mercadorias"
+  },
+  "6611-8/03": {
+    "descricao": "Bolsa de mercadorias e futuros"
+  },
+  "6611-8/04": {
+    "descricao": "Administração de mercados de balcão organizados"
+  },
+  "6612-6/01": {
+    "descricao": "Corretoras de títulos e valores mobiliários"
+  },
+  "6612-6/02": {
+    "descricao": "Distribuidoras de títulos e valores mobiliários"
+  },
+  "6612-6/03": {
+    "descricao": "Corretoras de câmbio"
+  },
+  "6612-6/04": {
+    "descricao": "Corretoras de contratos de mercadorias"
+  },
+  "6612-6/05": {
+    "descricao": "Agentes de investimentos em aplicações financeiras"
+  },
+  "6613-4/00": {
+    "descricao": "Administração de cartões de crédito"
+  },
+  "6619-3/01": {
+    "descricao": "Serviços de liquidação e custódia"
+  },
+  "6619-3/02": {
+    "descricao": "Correspondentes de instituições financeiras"
+  },
+  "6619-3/03": {
+    "descricao": "Representações de bancos estrangeiros"
+  },
+  "6619-3/04": {
+    "descricao": "Caixas eletrônicos"
+  },
+  "6619-3/05": {
+    "descricao": "Operadoras de cartões de débito"
+  },
+  "6619-3/99": {
+    "descricao": "Outras atividades auxiliares dos serviços financeiros não"
+  },
+  "6621-5/01": {
+    "descricao": "Peritos e avaliadores de seguros"
+  },
+  "6621-5/02": {
+    "descricao": "Auditoria e consultoria atuarial"
+  },
+  "6622-3/00": {
+    "descricao": "6629-1/00"
+  },
+  "6630-4/00": {
+    "descricao": "Atividades de administração de fundos por contrato ou comissão"
+  },
+  "6810-2/01": {
+    "descricao": "Compra e venda de imóveis próprios"
+  },
+  "6810-2/02": {
+    "descricao": "Aluguel de imóveis próprios"
+  },
+  "6821-8/01": {
+    "descricao": "Corretagem na compra e venda e avaliação de imóveis"
+  },
+  "6821-8/02": {
+    "descricao": "Corretagem no aluguel de imóveis"
+  },
+  "6822-6/00": {
+    "descricao": "Gestão e administração da propriedade imobiliária"
+  },
+  "6911-7/01": {
+    "descricao": "Serviços advocatícios"
+  },
+  "6911-7/02": {
+    "descricao": "Atividades auxiliares da justiça"
+  },
+  "6911-7/03": {
+    "descricao": "Agente de propriedade industrial"
+  },
+  "6912-5/00": {
+    "descricao": "Cartórios"
+  },
+  "6920-6/01": {
+    "descricao": "Atividades de contabilidade"
+  },
+  "6920-6/02": {
+    "descricao": "Atividades de consultoria e auditoria contábil e tributária"
+  },
+  "7020-4/00": {
+    "descricao": "ATIVIDADES DE SEDES DE EMPRESAS E DE CONSULTORIA"
+  },
+  "7111-1/00": {
+    "descricao": "Serviços de arquitetura"
+  },
+  "7112-0/00": {
+    "descricao": "Serviços de engenharia"
+  },
+  "7119-7/01": {
+    "descricao": "Serviços de cartografia, topografia e geodésia"
+  },
+  "7119-7/02": {
+    "descricao": "Atividades de estudos geológicos"
+  },
+  "7119-7/03": {
+    "descricao": "Serviços de desenho técnico relacionados à arquitetura e"
+  },
+  "7119-7/99": {
+    "descricao": "7119-7/04 Serviços de perícia técnica relacionados à segurança do trabalho"
+  },
+  "7120-1/00": {
+    "descricao": "Testes e análises técnicas"
+  },
+  "7210-0/00": {
+    "descricao": "45"
+  },
+  "7220-7/00": {
+    "descricao": "73"
+  },
+  "7311-4/00": {
+    "descricao": "Agências de publicidade"
+  },
+  "7312-2/00": {
+    "descricao": "Agenciamento de espaços para publicidade, exceto em"
+  },
+  "7319-0/01": {
+    "descricao": "Criação de estandes para feiras e exposições"
+  },
+  "7319-0/02": {
+    "descricao": "Promoção de vendas"
+  },
+  "7319-0/03": {
+    "descricao": "Marketing direto"
+  },
+  "7319-0/04": {
+    "descricao": "Consultoria em publicidade"
+  },
+  "7319-0/99": {
+    "descricao": "Outras atividades de publicidade não especificadas anteriormente"
+  },
+  "7320-3/00": {
+    "descricao": "Pesquisas de mercado e de opinião pública"
+  },
+  "7410-2/01": {
+    "descricao": "Design"
+  },
+  "7410-2/02": {
+    "descricao": "Decoração de interiores"
+  },
+  "7420-0/01": {
+    "descricao": "Atividades de produção de fotografias, exceto aérea e submarina"
+  },
+  "7420-0/02": {
+    "descricao": "Atividades de produção de fotografias aéreas e submarinas"
+  },
+  "7420-0/03": {
+    "descricao": "Laboratórios fotográficos"
+  },
+  "7420-0/04": {
+    "descricao": "Filmagem de festas e eventos"
+  },
+  "7420-0/05": {
+    "descricao": "Serviços de microfilmagem"
+  },
+  "7490-1/01": {
+    "descricao": "Serviços de tradução, interpretação e similares"
+  },
+  "7490-1/02": {
+    "descricao": "Escafandria e mergulho"
+  },
+  "7490-1/03": {
+    "descricao": "7490-1/04"
+  },
+  "7490-1/05": {
+    "descricao": "7490-1/99"
+  },
+  "7500-1/00": {
+    "descricao": "Atividades veterinárias"
+  },
+  "7711-0/00": {
+    "descricao": "Locação de automóveis sem condutor"
+  },
+  "7719-5/01": {
+    "descricao": "77.2"
+  },
+  "7719-5/02": {
+    "descricao": "Locação de aeronaves sem tripulação"
+  },
+  "7719-5/99": {
+    "descricao": "Locação de outros meios de transporte não especificados"
+  },
+  "7721-7/00": {
+    "descricao": "Aluguel de equipamentos recreativos e esportivos"
+  },
+  "7722-5/00": {
+    "descricao": "Aluguel de fitas de vídeo, DVDs e similares"
+  },
+  "7723-3/00": {
+    "descricao": "Aluguel de objetos do vestuário, jóias e acessórios"
+  },
+  "7729-2/01": {
+    "descricao": "Aluguel de aparelhos de jogos eletrônicos"
+  },
+  "7729-2/02": {
+    "descricao": "Aluguel de móveis, utensílios e aparelhos de uso doméstico e"
+  },
+  "7729-2/03": {
+    "descricao": "Aluguel de material médico"
+  },
+  "7729-2/99": {
+    "descricao": "Aluguel de outros objetos pessoais e domésticos não especificados"
+  },
+  "7731-4/00": {
+    "descricao": "Aluguel de máquinas e equipamentos agrícolas sem operador"
+  },
+  "7732-2/01": {
+    "descricao": "7732-2/02 Aluguel de andaimes"
+  },
+  "7733-1/00": {
+    "descricao": "Aluguel de máquinas e equipamentos para escritório"
+  },
+  "7739-0/01": {
+    "descricao": "7739-0/02"
+  },
+  "7739-0/03": {
+    "descricao": "7739-0/99"
+  },
+  "7740-3/00": {
+    "descricao": "Gestão de ativos intangíveis não-financeiros"
+  },
+  "7810-8/00": {
+    "descricao": "Seleção e agenciamento de mão-de-obra"
+  },
+  "7820-5/00": {
+    "descricao": "Locação de mão-de-obra temporária"
+  },
+  "7830-2/00": {
+    "descricao": "Fornecimento e gestão de recursos humanos para terceiros"
+  },
+  "7911-2/00": {
+    "descricao": "Agências de viagens"
+  },
+  "7912-1/00": {
+    "descricao": "Operadores turísticos"
+  },
+  "7990-2/00": {
+    "descricao": "Serviços de reservas e outros serviços de turismo não"
+  },
+  "8011-1/01": {
+    "descricao": "Atividades de vigilância e segurança privada"
+  },
+  "8011-1/02": {
+    "descricao": "Serviços de adestramento de cães de guarda"
+  },
+  "8012-9/00": {
+    "descricao": "Atividades de transporte de valores"
+  },
+  "8020-0/00": {
+    "descricao": "Atividades de monitoramento de sistemas de segurança"
+  },
+  "8030-7/00": {
+    "descricao": "Atividades de investigação particular"
+  },
+  "8111-7/00": {
+    "descricao": "8112-5/00 Condomínios prediais"
+  },
+  "8121-4/00": {
+    "descricao": "Limpeza em prédios e em domicílios"
+  },
+  "8122-2/00": {
+    "descricao": "Imunização e controle de pragas urbanas"
+  },
+  "8129-0/00": {
+    "descricao": "Atividades de limpeza não especificadas anteriormente"
+  },
+  "8130-3/00": {
+    "descricao": "Atividades paisagísticas"
+  },
+  "8211-3/00": {
+    "descricao": "Serviços combinados de escritório e apoio administrativo"
+  },
+  "8219-9/01": {
+    "descricao": "Fotocópias"
+  },
+  "8219-9/99": {
+    "descricao": "Preparação de documentos e serviços especializados de apoio"
+  },
+  "8220-2/00": {
+    "descricao": "Atividades de teleatendimento"
+  },
+  "8230-0/01": {
+    "descricao": "Serviços de organização de feiras, congressos, exposições e festas"
+  },
+  "8230-0/02": {
+    "descricao": "Casas de festas e eventos"
+  },
+  "8291-1/00": {
+    "descricao": "Atividades de cobrança e informações cadastrais"
+  },
+  "8292-0/00": {
+    "descricao": "Envasamento e empacotamento sob contrato"
+  },
+  "8299-7/01": {
+    "descricao": "Medição de consumo de energia elétrica, gás e água"
+  },
+  "8299-7/02": {
+    "descricao": "Emissão de vales-alimentação, vales-transporte e similares"
+  },
+  "8299-7/03": {
+    "descricao": "Serviços de gravação de carimbos, exceto confecção"
+  },
+  "8299-7/04": {
+    "descricao": "Leiloeiros independentes"
+  },
+  "8299-7/05": {
+    "descricao": "Serviços de levantamento de fundos sob contrato"
+  },
+  "8299-7/06": {
+    "descricao": "Casas lotéricas"
+  },
+  "8299-7/07": {
+    "descricao": "Salas de acesso à internet"
+  },
+  "8299-7/99": {
+    "descricao": "Outras atividades de serviços prestados principalmente às"
+  },
+  "8411-6/00": {
+    "descricao": "Administração pública em geral"
+  },
+  "8412-4/00": {
+    "descricao": "Regulação das atividades de saúde, educação, serviços"
+  },
+  "8413-2/00": {
+    "descricao": "Regulação das atividades econômicas"
+  },
+  "8421-3/00": {
+    "descricao": "Relações exteriores"
+  },
+  "8422-1/00": {
+    "descricao": "Defesa"
+  },
+  "8423-0/00": {
+    "descricao": "Justiça"
+  },
+  "8424-8/00": {
+    "descricao": "Segurança e ordem pública"
+  },
+  "8425-6/00": {
+    "descricao": "Defesa Civil"
+  },
+  "8430-2/00": {
+    "descricao": "Seguridade social obrigatória"
+  },
+  "8511-2/00": {
+    "descricao": "Educação infantil - creche"
+  },
+  "8512-1/00": {
+    "descricao": "Educação infantil - pré-escola"
+  },
+  "8513-9/00": {
+    "descricao": "Ensino fundamental"
+  },
+  "8520-1/00": {
+    "descricao": "Ensino médio"
+  },
+  "8531-7/00": {
+    "descricao": "Educação superior - graduação"
+  },
+  "8532-5/00": {
+    "descricao": "Educação superior - graduação e pós-graduação"
+  },
+  "8533-3/00": {
+    "descricao": "Educação superior - pós-graduação e extensão"
+  },
+  "8541-4/00": {
+    "descricao": "Educação profissional de nível técnico"
+  },
+  "8542-2/00": {
+    "descricao": "Educação profissional de nível tecnológico"
+  },
+  "8550-3/01": {
+    "descricao": "Administração de caixas escolares"
+  },
+  "8550-3/02": {
+    "descricao": "Atividades de apoio à educação, exceto caixas escolares"
+  },
+  "8591-1/00": {
+    "descricao": "Ensino de esportes"
+  },
+  "8592-9/01": {
+    "descricao": "Ensino de dança"
+  },
+  "8592-9/02": {
+    "descricao": "Ensino de artes cênicas, exceto dança"
+  },
+  "8592-9/03": {
+    "descricao": "Ensino de música"
+  },
+  "8592-9/99": {
+    "descricao": "Ensino de arte e cultura não especificado anteriormente"
+  },
+  "8593-7/00": {
+    "descricao": "Ensino de idiomas"
+  },
+  "8599-6/01": {
+    "descricao": "Formação de condutores"
+  },
+  "8599-6/02": {
+    "descricao": "Cursos de pilotagem"
+  },
+  "8599-6/03": {
+    "descricao": "Treinamento em informática"
+  },
+  "8599-6/04": {
+    "descricao": "Treinamento em desenvolvimento profissional e gerencial"
+  },
+  "8599-6/05": {
+    "descricao": "Cursos preparatórios para concursos"
+  },
+  "8599-6/99": {
+    "descricao": "Outras atividades de ensino não especificadas anteriormente"
+  },
+  "8610-1/01": {
+    "descricao": "8610-1/02"
+  },
+  "8621-6/01": {
+    "descricao": "UTI móvel"
+  },
+  "8621-6/02": {
+    "descricao": "Serviços móveis de atendimento a urgências, exceto por UTI móvel"
+  },
+  "8622-4/00": {
+    "descricao": "50"
+  },
+  "8630-5/01": {
+    "descricao": "8630-5/02"
+  },
+  "8630-5/03": {
+    "descricao": "Atividade médica ambulatorial restrita a consultas"
+  },
+  "8630-5/04": {
+    "descricao": "8630-5/05"
+  },
+  "8630-5/06": {
+    "descricao": "Serviços de vacinação e imunização humana"
+  },
+  "8630-5/07": {
+    "descricao": "Atividades de reprodução humana assistida"
+  },
+  "8630-5/99": {
+    "descricao": "Atividades de atenção ambulatorial não especificadas anteriormente"
+  },
+  "8640-2/01": {
+    "descricao": "Laboratórios de anatomia patológica e citológica"
+  },
+  "8640-2/02": {
+    "descricao": "Laboratórios clínicos"
+  },
+  "8640-2/03": {
+    "descricao": "Serviços de diálise e nefrologia"
+  },
+  "8640-2/04": {
+    "descricao": "Serviços de tomografia"
+  },
+  "8640-2/05": {
+    "descricao": "Serviços de diagnóstico por imagem com uso de radiação ionizante,"
+  },
+  "8640-2/06": {
+    "descricao": "Serviços de ressonância magnética"
+  },
+  "8640-2/07": {
+    "descricao": "8640-2/08"
+  },
+  "8640-2/09": {
+    "descricao": "Serviços de diagnóstico por imagem sem uso de radiação ionizante,"
+  },
+  "8640-2/10": {
+    "descricao": "Serviços de quimioterapia"
+  },
+  "8640-2/11": {
+    "descricao": "Serviços de radioterapia"
+  },
+  "8640-2/12": {
+    "descricao": "Serviços de hemoterapia"
+  },
+  "8640-2/13": {
+    "descricao": "Serviços de litotripsia"
+  },
+  "8640-2/14": {
+    "descricao": "Serviços de bancos de células e tecidos humanos"
+  },
+  "8640-2/99": {
+    "descricao": "Atividades de serviços de complementação diagnóstica e"
+  },
+  "8650-0/01": {
+    "descricao": "Atividades de enfermagem"
+  },
+  "8650-0/02": {
+    "descricao": "Atividades de profissionais da nutrição"
+  },
+  "8650-0/03": {
+    "descricao": "Atividades de psicologia e psicanálise"
+  },
+  "8650-0/04": {
+    "descricao": "Atividades de fisioterapia"
+  },
+  "8650-0/05": {
+    "descricao": "Atividades de terapia ocupacional"
+  },
+  "8650-0/06": {
+    "descricao": "Atividades de fonoaudiologia"
+  },
+  "8650-0/07": {
+    "descricao": "Atividades de terapia de nutrição enteral e parenteral"
+  },
+  "8650-0/99": {
+    "descricao": "Atividades de profissionais da área de saúde não especificadas"
+  },
+  "8660-7/00": {
+    "descricao": "Atividades de apoio à gestão de saúde"
+  },
+  "8690-9/01": {
+    "descricao": "51"
+  },
+  "8690-9/02": {
+    "descricao": "Atividades de bancos de leite humano"
+  },
+  "8690-9/99": {
+    "descricao": "Outras atividades de atenção à saúde humana não especificadas"
+  },
+  "8711-5/01": {
+    "descricao": "Clínicas e residências geriátricas"
+  },
+  "8711-5/02": {
+    "descricao": "Instituições de longa permanência para idosos"
+  },
+  "8711-5/03": {
+    "descricao": "Atividades de assistência a deficientes físicos, imunodeprimidos e"
+  },
+  "8711-5/04": {
+    "descricao": "Centros de apoio a pacientes com câncer e com AIDS"
+  },
+  "8711-5/05": {
+    "descricao": "Condomínios residenciais para idosos"
+  },
+  "8712-3/00": {
+    "descricao": "Atividades de fornecimento de infra-estrutura de apoio e"
+  },
+  "8720-4/01": {
+    "descricao": "Atividades de centros de assistência psicossocial"
+  },
+  "8720-4/99": {
+    "descricao": "Atividades de assistência psicossocial e à saúde a portadores de"
+  },
+  "8730-1/01": {
+    "descricao": "Orfanatos"
+  },
+  "8730-1/02": {
+    "descricao": "Albergues assistenciais"
+  },
+  "8730-1/99": {
+    "descricao": "Atividades de assistência social prestadas em residências coletivas"
+  },
+  "8800-6/00": {
+    "descricao": "Serviços de assistência social sem alojamento"
+  },
+  "9001-9/01": {
+    "descricao": "Produção teatral"
+  },
+  "9001-9/02": {
+    "descricao": "Produção musical"
+  },
+  "9001-9/03": {
+    "descricao": "Produção de espetáculos de dança"
+  },
+  "9001-9/04": {
+    "descricao": "Produção de espetáculos circenses, de marionetes e similares"
+  },
+  "9001-9/05": {
+    "descricao": "Produção de espetáculos de rodeios, vaquejadas e similares"
+  },
+  "9001-9/06": {
+    "descricao": "Atividades de sonorização e de iluminação"
+  },
+  "9001-9/99": {
+    "descricao": "9002-7/01"
+  },
+  "9002-7/02": {
+    "descricao": "Restauração de obras de arte"
+  },
+  "9003-5/00": {
+    "descricao": "Gestão de espaços para artes cênicas, espetáculos e outras"
+  },
+  "9101-5/00": {
+    "descricao": "Atividades de bibliotecas e arquivos"
+  },
+  "9102-3/01": {
+    "descricao": "9102-3/02 Restauração e conservação de lugares e prédios históricos"
+  },
+  "9103-1/00": {
+    "descricao": "Atividades de jardins botânicos, zoológicos, parques nacionais,"
+  },
+  "9200-3/01": {
+    "descricao": "Casas de bingo"
+  },
+  "9200-3/02": {
+    "descricao": "Exploração de apostas em corridas de cavalos"
+  },
+  "9200-3/99": {
+    "descricao": "Exploração de jogos de azar e apostas não especificados"
+  },
+  "9311-5/00": {
+    "descricao": "Gestão de instalações de esportes"
+  },
+  "9312-3/00": {
+    "descricao": "Clubes sociais, esportivos e similares"
+  },
+  "9313-1/00": {
+    "descricao": "Atividades de condicionamento físico"
+  },
+  "9319-1/01": {
+    "descricao": "Produção e promoção de eventos esportivos"
+  },
+  "9319-1/99": {
+    "descricao": "Outras atividades esportivas não especificadas anteriormente"
+  },
+  "9321-2/00": {
+    "descricao": "Parques de diversão e parques temáticos"
+  },
+  "9329-8/01": {
+    "descricao": "Discotecas, danceterias, salões de dança e similares"
+  },
+  "9329-8/02": {
+    "descricao": "Exploração de boliches"
+  },
+  "9329-8/03": {
+    "descricao": "Exploração de jogos de sinuca, bilhar e similares"
+  },
+  "9329-8/04": {
+    "descricao": "Exploração de jogos eletrônicos recreativos"
+  },
+  "9329-8/99": {
+    "descricao": "Outras atividades de recreação e lazer não especificadas"
+  },
+  "9411-1/00": {
+    "descricao": "Atividades de organizações associativas patronais e empresariais"
+  },
+  "9412-0/00": {
+    "descricao": "Atividades de organizações associativas profissionais"
+  },
+  "9420-1/00": {
+    "descricao": "Atividades de organizações sindicais"
+  },
+  "9430-8/00": {
+    "descricao": "Atividades de associações de defesa de direitos sociais"
+  },
+  "9491-0/00": {
+    "descricao": "Atividades de organizações religiosas"
+  },
+  "9492-8/00": {
+    "descricao": "Atividades de organizações políticas"
+  },
+  "9493-6/00": {
+    "descricao": "Atividades de organizações associativas ligadas à cultura e à arte"
+  },
+  "9499-5/00": {
+    "descricao": "Atividades associativas não especificadas anteriormente"
+  },
+  "9511-8/00": {
+    "descricao": "9512-6/00 Reparação e manutenção de equipamentos de comunicação"
+  },
+  "9521-5/00": {
+    "descricao": "9529-1/01 Reparação de calçados, bolsas e artigos de viagem"
+  },
+  "9529-1/02": {
+    "descricao": "Chaveiros"
+  },
+  "9529-1/03": {
+    "descricao": "Reparação de relógios"
+  },
+  "9529-1/04": {
+    "descricao": "Reparação de bicicletas, triciclos e outros veículos não-motorizados"
+  },
+  "9529-1/05": {
+    "descricao": "Reparação de artigos do mobiliário"
+  },
+  "9529-1/06": {
+    "descricao": "Reparação de jóias"
+  },
+  "9529-1/99": {
+    "descricao": "Reparação e manutenção de outros objetos e equipamentos"
+  },
+  "9601-7/01": {
+    "descricao": "Lavanderias"
+  },
+  "9601-7/02": {
+    "descricao": "Tinturarias"
+  },
+  "9601-7/03": {
+    "descricao": "Toalheiros"
+  },
+  "9602-5/01": {
+    "descricao": "Cabeleireiros"
+  },
+  "9602-5/02": {
+    "descricao": "Outras atividades de tratamento de beleza"
+  },
+  "9603-3/01": {
+    "descricao": "Gestão e manutenção de cemitérios"
+  },
+  "9603-3/02": {
+    "descricao": "Serviços de cremação"
+  },
+  "9603-3/03": {
+    "descricao": "Serviços de sepultamento"
+  },
+  "9603-3/04": {
+    "descricao": "Serviços de funerárias"
+  },
+  "9603-3/05": {
+    "descricao": "Serviços de somatoconservação"
+  },
+  "9603-3/99": {
+    "descricao": "Atividades funerárias e serviços relacionados não especificados"
+  },
+  "9609-2/01": {
+    "descricao": "Clínicas de estética e similares"
+  },
+  "9609-2/02": {
+    "descricao": "Agências matrimoniais"
+  },
+  "9609-2/03": {
+    "descricao": "Alojamento, higiene e embelezamento de animais"
+  },
+  "9609-2/04": {
+    "descricao": "Exploração de máquinas de serviços pessoais acionadas por moeda"
+  },
+  "9609-2/99": {
+    "descricao": "Outras atividades de serviços pessoais não especificadas"
+  },
+  "9700-5/00": {
+    "descricao": "Serviços domésticos"
+  },
+  "9900-8/00": {
+    "descricao": "Organismos internacionais e outras instituições extraterritoriais"
+  }
+}

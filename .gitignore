@@ -1,3 +1,39 @@
-node_modules
-# Keep environment variables out of version control
+# Node modules
+node_modules/
+
+# Ambiente e credenciais
 .env
+.env.local
+.env.*.local
+
+# Dados locais e temporários (não devem ser versionados)
+apps/backend/data/downloads/
+apps/backend/data/*.csv
+apps/backend/data/*.zip
+apps/backend/data/*.tmp
+apps/backend/data/aneel_datasets_map.json
+
+# Arquivos de output e cache do sistema
+dist/
+build/
+.cache/
+*.log
+
+# Diretórios do Prisma
+apps/backend/prisma/migrations/
+*.db
+
+# Logs de execução
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Diretórios do sistema operacional
+.DS_Store
+Thumbs.db
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+

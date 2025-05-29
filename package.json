@@ -10,7 +10,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only apps/backend/src/server.ts",
     "migrate": "npx prisma migrate dev --schema=apps/backend/prisma/schema.prisma",
-    "generate": "npx prisma generate --schema=apps/backend/prisma/schema.prisma"
+    "generate": "npx prisma generate --schema=apps/backend/prisma/schema.prisma",
+
+    "import:ucat": "npx tsx apps/backend/src/jobs/importers/importLeadBruto.job.ts UCAT_tab",
+    "import:ucmt": "npx tsx apps/backend/src/jobs/importers/importLeadBruto.job.ts UCMT_tab",
+    "import:ucbt": "npx tsx apps/backend/src/jobs/importers/importLeadBruto.job.ts UCBT_tab"
   },
   "keywords": [],
   "author": "",
