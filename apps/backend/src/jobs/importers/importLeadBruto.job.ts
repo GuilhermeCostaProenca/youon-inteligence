@@ -1,7 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 import unzipper from 'unzipper';
-import { parse } from 'csv-parse/sync';
+import { parse } from 'csv-parse';
+import { createReadStream } from 'fs';
 import { prisma } from '../../database/prismaClient';
 import axios from 'axios';
 import crypto from 'crypto';
@@ -12,37 +13,13 @@ const camposMap = JSON.parse(fs.readFileSync(camposMapPath, 'utf-8'));
 const datasetsPath = path.resolve(__dirname, '../../../data/datasets.json');
 const downloadsDir = path.resolve(__dirname, '../../../data/downloads');
 
-async function baixarArquivo(url: string, nome: string): Promise<string> {
-  if (!fs.existsSync(downloadsDir)) fs.mkdirSync(downloadsDir, { recursive: true });
-
-  const filePath = path.join(downloadsDir, nome);
-  if (fs.existsSync(filePath)) fs.unlinkSync(filePath); // limpa o arquivo anterior
-
-  const writer = fs.createWriteStream(filePath);
-  const response = await axios.get(url, { responseType: 'stream', timeout: 60000 });
-
-  console.log(`🌐 Iniciando download de: ${url}`);
-  response.data.pipe(writer);
-
-  return new Promise((resolve, reject) => {
-    writer.on('finish', () => {
-      console.log(`✅ Download concluído: ${filePath}`);
-      resolve(filePath);
-    });
-    writer.on('error', err => {
-      console.error(`❌ Erro no download de ${nome}:`, err);
-      reject(err);
-    });
-  });
-}
-
 async function extrairZip(zipPath: string): Promise<string> {
   const directory = await unzipper.Open.file(zipPath);
   const firstCsv = directory.files.find(file => file.path.endsWith('.csv'));
   if (!firstCsv) throw new Error('Nenhum CSV encontrado no ZIP');
 
   const extractedPath = path.join(downloadsDir, firstCsv.path);
-  if (fs.existsSync(extractedPath)) fs.unlinkSync(extractedPath); // limpa anterior
+  if (fs.existsSync(extractedPath)) fs.unlinkSync(extractedPath);
 
   await new Promise((res, rej) => {
     firstCsv.stream()
@@ -134,80 +111,73 @@ async function processarCSV(filePath: string, datasetNome: string, origem: strin
   const campos = camposMap[datasetNome];
   if (!campos) throw new Error(`❌ Mapeamento de campos ausente para ${datasetNome}`);
 
-  const content = await fs.promises.readFile(filePath);
-  const records: any[] = parse(content, { columns: true, skip_empty_lines: true, bom: true, delimiter: ';' });
+  return new Promise<void>((resolve, reject) => {
+    const stream = createReadStream(filePath, { encoding: 'latin1' })
+      .pipe(parse({ columns: true, delimiter: ';', bom: true, skip_empty_lines: true }));
 
-  console.log(`🔢 Total de registros lidos: ${records.length}`);
+    stream.on('data', async (row) => {
+      stream.pause();
+      try {
+        const id = row[campos.id];
+        if (!id) return;
 
-  const total = records.length;
-  const batchSize = 500;
-  const existingIds = new Set(
-    (await prisma.lead_bruto.findMany({
-      where: { id: { in: records.map(r => r[campos.id]) } },
-      select: { id: true }
-    })).map((e: { id: string }) => e.id)
+        const latitude = parseFloatOrNull(row[campos.latitude]);
+        const longitude = parseFloatOrNull(row[campos.longitude]);
+        const nomeUc = row[campos.nomeUc] || 'Desconhecido';
+        const dist = row[campos.distribuidora] || '';
 
-  );
+        const data = {
+          id,
+          id_interno: gerarIdInterno(id, dist, nomeUc),
+          nome_uc: nomeUc,
+          classe: row[campos.classe] || '',
+          subgrupo: row[campos.subgrupo] || '',
+          modalidade: row[campos.modalidade] || '',
+          situacao: row[campos.situacao] || '',
+          grupo_tensao: row[campos.grupoTensao] || '',
+          tipo_sistema: row[campos.tipoSistema] || '',
+          origem: datasetNome,
+          segmento: origem,
+          distribuidora: dist,
+          municipio_ibge: row[campos.municipioIbge] || '',
+          subestacao: row[campos.subestacao] || '',
+          bairro: row[campos.bairro] || '',
+          cep: row[campos.cep] || '',
+          cnae: row[campos.cnae] || '',
+          data_conexao: parseDataConexao(row[campos.dataConexao]),
+          coordenadas: latitude !== null && longitude !== null ? { lat: latitude, lng: longitude } : undefined,
+          descricao: row[campos.descricao] || '',
+          status: 'raw',
+        };
 
-  for (let i = 0; i < records.length; i += batchSize) {
-    const chunk = records.slice(i, i + batchSize);
+        try {
+          await prisma.lead_bruto.create({ data });
+        } catch (error: any) {
+          if (error.code === 'P2002') {
+            await prisma.lead_bruto.update({ where: { id }, data });
+          } else {
+            throw error;
+          }
+        }
 
-    const novos: any[] = [];
-    const atualizacoes: any[] = [];
-
-    for (const row of chunk) {
-      const id = row[campos.id];
-      if (!id) continue;
-
-      const latitude = parseFloatOrNull(row[campos.latitude]);
-      const longitude = parseFloatOrNull(row[campos.longitude]);
-      const nomeUc = row[campos.nomeUc] || 'Desconhecido';
-      const dist = row[campos.distribuidora] || '';
-
-      const data = {
-        id,
-        id_interno: gerarIdInterno(id, dist, nomeUc),
-        nome_uc: nomeUc,
-        classe: row[campos.classe] || '',
-        subgrupo: row[campos.subgrupo] || '',
-        modalidade: row[campos.modalidade] || '',
-        situacao: row[campos.situacao] || '',
-        grupo_tensao: row[campos.grupoTensao] || '',
-        tipo_sistema: row[campos.tipoSistema] || '',
-        origem: datasetNome,
-        segmento: origem,
-        distribuidora: dist,
-        municipio_ibge: row[campos.municipioIbge] || '',
-        subestacao: row[campos.subestacao] || '',
-        bairro: row[campos.bairro] || '',
-        cep: row[campos.cep] || '',
-        cnae: row[campos.cnae] || '',
-        data_conexao: parseDataConexao(row[campos.dataConexao]),
-        coordenadas: latitude !== null && longitude !== null ? { lat: latitude, lng: longitude } : undefined,
-        descricao: row[campos.descricao] || '',
-        status: 'raw',
-      };
-
-      if (existingIds.has(id)) {
-        atualizacoes.push({ id, data });
-      } else {
-        novos.push(data);
+        await salvarRelacionadas(id, row);
+        stream.resume();
+      } catch (err) {
+        console.error('❌ Erro ao processar linha:', err);
+        reject(err);
       }
-    }
+    });
 
-    if (novos.length) await prisma.lead_bruto.createMany({ data: novos, skipDuplicates: true });
+    stream.on('end', () => {
+      console.log('🏋 Fim do processamento do CSV.');
+      resolve();
+    });
 
-    await Promise.allSettled(
-      atualizacoes.map(item =>
-        prisma.lead_bruto.update({ where: { id: item.id }, data: item.data })
-      )
-    );
-
-    await Promise.allSettled(chunk.map(row => salvarRelacionadas(row[campos.id], row)));
-
-    const progresso = Math.round(((i + batchSize) / total) * 100);
-    console.log(`✔️ ${Math.min(i + batchSize, total)} / ${total} (${progresso}%) processados...`);
-  }
+    stream.on('error', (err) => {
+      console.error('❌ Erro no stream:', err);
+      reject(err);
+    });
+  });
 }
 
 async function main() {
@@ -227,17 +197,6 @@ async function main() {
     const nomeArquivo = alvo.url.endsWith('.zip') ? `${alvo.nome}.zip` : `${alvo.nome}.csv`;
     const caminhoArquivo = path.join(downloadsDir, nomeArquivo);
 
-    // ⛔️ Fluxo automático de download foi desativado
-    /*
-    console.log(`⬇️ Baixando ${alvo.nome}...`);
-    const arquivoBaixado = await baixarArquivo(alvo.url, nomeArquivo);
-    let csvPath = arquivoBaixado;
-    if (arquivoBaixado.endsWith('.zip')) {
-      csvPath = await extrairZip(arquivoBaixado);
-    }
-    */
-
-    // ✅ Novo fluxo manual — lê arquivos já presentes localmente
     if (!fs.existsSync(caminhoArquivo)) {
       console.error(`❌ Arquivo esperado não encontrado: ${caminhoArquivo}`);
       process.exit(1);
@@ -249,17 +208,15 @@ async function main() {
     }
 
     await processarCSV(csvPath, alvo.nome, alvo.origem);
-
-    console.log(`🏁 Importação de ${alvo.nome} concluída.`);
+    console.log(`🏋 Importação de ${alvo.nome} concluída.`);
     process.exit(0);
   } catch (err) {
-    console.error(`❌ Erro ao processar ${alvo.nome}:`, err);
+    console.error(`❌ Erro ao processar ${alvo?.nome}:`, err);
     process.exit(1);
   }
 }
 
-
-main().catch(err => {
+main().catch((err: unknown) => {
   console.error('❌ Erro geral na importação:', err);
   process.exit(1);
 });
