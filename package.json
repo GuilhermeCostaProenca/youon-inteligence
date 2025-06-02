@@ -20,7 +20,10 @@
     "quality:energia": "tsx apps/backend/src/jobs/quality/importEnergia.job.ts",
     "quality:demanda": "tsx apps/backend/src/jobs/quality/importDemanda.job.ts",
     "quality:qualidade": "tsx apps/backend/src/jobs/quality/importQualidade.job.ts",
-    "classify:leads": "tsx apps/backend/src/jobs/classification/classifyLeads.job.ts"
+    "classify:leads": "tsx apps/backend/src/jobs/classification/classifyLeads.job.ts",
+
+    "ucbt": "tsx apps/backend/src/jobs/importers/importUcbt.job.ts"
+
   },
   "keywords": [],
   "author": "Guilherme Costa Proença",
