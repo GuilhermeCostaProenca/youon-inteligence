@@ -11,3 +11,9 @@ export function normalizarCepBDGD(raw: string | null | undefined): string | null
   if (!raw) return null;
   return raw.replace(/\D/g, '') || null;
 }
+
+export function parseFloatOrNull(raw: string | null | undefined): number | null {
+  if (!raw) return null;
+  const num = parseFloat(raw.replace(',', '.'));
+  return isNaN(num) ? null : num;
+}

@@ -4,8 +4,8 @@
     "url": "https://dadosabertos.aneel.gov.br/dataset/4459e483-451f-4444-8022-bd8b5eac05c5/resource/f6671cba-f269-42ef-8eb3-62cb3bfa0b98/download/ucat_pj.csv",
     "origem": "C&I",
     "colunas": [
-      "",
-      "DIST"COD_ID_ENCR,
+      "COD_ID_ENCR",
+      "DIST",
       "PN_CON",
       "PAC",
       "CTMT",
