@@ -3,11 +3,13 @@
 import fs from 'fs';
 import path from 'path';
 import { parse } from 'csv-parse/sync';
-import { prisma } from '../../database/prisma';
-import datasets from '../../datasets.json';
-import camposMap from '../../dataset_campos_map.json';
+import { prisma } from '../../database/prismaClient';
+import datasets from '../../../data/datasets.json';
+import camposMapRaw from '../../../data/dataset_campos_map.json';
 
-const downloadsDir = path.resolve(__dirname, '../../downloads');
+const camposMap = camposMapRaw as Record<string, Record<string, string>>;
+
+const downloadsDir = path.resolve(__dirname, '../../../data/downloads');
 
 async function importarQualidade() {
   let total = 0;

@@ -2,8 +2,8 @@
 import fs from 'fs';
 import path from 'path';
 
-const datasetsPath = path.resolve(__dirname, '../../datasets.json');
-const outputPath = path.resolve(__dirname, '../../dataset_campos_map.json');
+const datasetsPath = path.resolve(__dirname, '../../../data/datasets.json');
+const outputPath = path.resolve(__dirname, '../../../data/dataset_campos_map.json');
 
 // Heurística de mapeamento por palavras-chave comuns
 const heuristicas = {

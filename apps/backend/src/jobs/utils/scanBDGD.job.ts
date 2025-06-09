@@ -24,8 +24,8 @@ const datasets: { nome: string; url: string; origem: string }[] = [
   },
 ];
 
-const downloadsDir = path.resolve(__dirname, '../downloads');
-const datasetsPath = path.resolve(__dirname, '../datasets.json');
+const downloadsDir = path.resolve(__dirname, '../../../data/downloads');
+const datasetsPath = path.resolve(__dirname, '../../../data/datasets.json');
 
 async function baixarArquivo(url: string, nome: string): Promise<string> {
   const filePath = path.join(downloadsDir, nome);
@@ -46,7 +46,7 @@ async function extrairZip(zipPath: string): Promise<string> {
   await new Promise((res, rej) => {
     firstCsv.stream()
       .pipe(fs.createWriteStream(extractedPath))
-      .on('finish', res)
+      .on('finish', () => res(extractedPath))
       .on('error', rej);
   });
   return extractedPath;
