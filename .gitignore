@@ -12,6 +12,7 @@ apps/backend/data/*.csv
 apps/backend/data/*.zip
 apps/backend/data/*.tmp
 apps/backend/data/aneel_datasets_map.json
+apps/backend/Logs
 
 # Arquivos de output e cache do sistema
 dist/

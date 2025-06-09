@@ -1,24 +1,33 @@
 {
   "name": "youon-inteligence",
   "version": "1.0.0",
-  "description": "Este projeto tem como objetivo construir uma plataforma completa de inteligência comercial para o setor de energia, com foco inicial em leads C\\&I (Comercial e Industrial). A solução será capaz de coletar dados de forma automática, enriquecer com informações externas, classificar os leads e recomendar soluções ideais com base em parâmetros técnicos e comerciais.",
+  "description": "Plataforma completa de inteligência comercial para o setor de energia, focada em leads C&I, com enriquecimento, classificação e visualização.",
   "main": "index.js",
   "directories": {
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node-dev --respawn --transpile-only apps/backend/src/server.ts",
     "migrate": "npx prisma migrate dev --schema=apps/backend/prisma/schema.prisma",
     "generate": "npx prisma generate --schema=apps/backend/prisma/schema.prisma",
+    "import:tudo": "tsx apps/backend/src/jobs/orchestrators/importarTudo.job.ts",
+    "import:ucat": "tsx apps/backend/src/jobs/importers/importUcatCascade.job.ts",
+    "import:ucmt": "tsx apps/backend/src/jobs/importers/importUcmtCascade.job.ts",
+    "import:ucbt": "tsx apps/backend/src/jobs/importers/importUcbtCascade.job.ts",
+    "normalize:leads": "tsx apps/backend/src/jobs/enrichment/normalizarDadosLeads.job.ts",
+    "enrich:geo": "tsx apps/backend/src/jobs/enrichment/inferirGeoInfoLead.job.ts",
+    "enrich:cnpj": "tsx apps/backend/src/jobs/enrichment/inferirCNPJporCoordenada.job.ts",
+    "quality:energia": "tsx apps/backend/src/jobs/quality/importEnergia.job.ts",
+    "quality:demanda": "tsx apps/backend/src/jobs/quality/importDemanda.job.ts",
+    "quality:qualidade": "tsx apps/backend/src/jobs/quality/importQualidade.job.ts",
+    "classify:leads": "tsx apps/backend/src/jobs/classification/classifyLeads.job.ts",
 
-    "import:ucat": "npx tsx apps/backend/src/jobs/importers/importLeadBruto.job.ts UCAT_tab",
-    "import:ucmt": "npx tsx apps/backend/src/jobs/importers/importLeadBruto.job.ts UCMT_tab",
-    "import:ucbt": "npx tsx apps/backend/src/jobs/importers/importLeadBruto.job.ts UCBT_tab"
+    "ucbt": "tsx apps/backend/src/jobs/importers/importUcbt.job.ts"
+
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Guilherme Costa Proença",
+  "license": "MIT",
   "dependencies": {
     "@prisma/client": "^6.8.2",
     "adm-zip": "^0.5.16",

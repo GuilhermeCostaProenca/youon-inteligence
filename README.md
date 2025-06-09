@@ -6,10 +6,10 @@ Bem-vindo à plataforma **Youon Intelligence**, uma solução robusta e escaláv
 
 ## 🧠 Visão Geral
 
-* 📅 Importação automatizada de dados públicos da ANEEL (BDGD);
+* 🗕️ Importação automatizada de dados públicos da ANEEL (BDGD);
 * 🧠 Enriquecimento com dados de CNPJ, localização, CNAE e nome fantasia;
 * 🔎 Classificação inteligente dos leads em HOT, WARM ou COLD;
-* 🗘️ Visualização futura em mapas com filtros por região, prioridade e segmento;
+* 🟘 Visualização futura em mapas com filtros por região, prioridade e segmento;
 * 🔧 Sugestão futura de soluções ideais baseadas em consumo, demanda e qualidade.
 
 ---
@@ -21,52 +21,23 @@ youon-inteligence/
 ├── apps/
 │   ├── backend/
 │   │   ├── prisma/
-│   │   │   ├── schema.prisma
-│   │   │   ├── dev.db
-│   │   │   └── migrations/
 │   │   ├── data/
-│   │   │   ├── downloads/
-│   │   │   ├── aneel_datasets_map.json
-│   │   │   ├── dataset_campos_map.json
-│   │   │   ├── datasets.json
-│   │   │   └── mapeamento_campos_aneel.json
 │   │   ├── docs/
-│   │   │   ├── api-endpoints.md
-│   │   │   ├── arquitetura.md
-│   │   │   ├── dados-externos.md
-│   │   │   └── DicionarioANEEL.md
 │   │   ├── src/
 │   │   │   ├── api/
-│   │   │   │   ├── cni/
-│   │   │   │   ├── gtd/
-│   │   │   │   └── home/
 │   │   │   ├── controllers/
-│   │   │   │   └── cni/
 │   │   │   ├── services/
-│   │   │   │   ├── aneel.service.ts
-│   │   │   │   ├── cnpj.service.ts
-│   │   │   │   └── google.service.ts
 │   │   │   ├── jobs/
 │   │   │   │   ├── importers/
-│   │   │   │   │   └── importLeadBruto.job.ts
+│   │   │   │   ├── normalizadores/
 │   │   │   │   ├── enrichment/
-│   │   │   │   │   └── enrichLeads.job.ts
 │   │   │   │   ├── quality/
-│   │   │   │   │   └── importQuality.job.ts
 │   │   │   │   ├── classification/
-│   │   │   │   │   └── classifyLeads.job.ts
-│   │   │   │   └── utils/
-│   │   │   │       ├── generateFieldMap.job.ts
-│   │   │   │       └── scanBDGD.job.ts
+│   │   │   │   └── orchestrators/
 │   │   │   ├── utils/
-│   │   │   │   └── csvUtils.ts
 │   │   │   ├── database/
-│   │   │   │   └── prismaClient.ts
-│   │   │   ├── middlewares/
-│   │   │   ├── models/
 │   │   │   └── server.ts
 │   └── frontend/
-│       ├── public/
 │       └── src/
 │           ├── components/
 │           ├── layouts/
@@ -74,12 +45,7 @@ youon-inteligence/
 │           ├── services/
 │           └── styles/
 ├── infra/
-│   ├── db/
-│   ├── docker/
-│   └── monitoring/
 ├── packages/
-│   ├── api-clients/
-│   ├── shared-utils/
 ├── README.md
 ```
 
@@ -87,13 +53,29 @@ youon-inteligence/
 
 ## 🚀 Pipeline de Execução
 
-Todos os scripts abaixo devem ser executados em ordem sequencial para garantir integridade:
+```mermaid
+graph TD
+  A[importarUCAT] --> B[importarUCMT]
+  B --> C[importarUCBT]
+  C --> D[normalizarDadosLeads]
+  D --> E[inferirGeoInfoLead]
+  E --> F[inferirCNPJporCoordenada]
+  F --> G[inserirEnergiaLeads]
+  F --> H[inserirDemandaLeads]
+  F --> I[inserirQualidadeLeads]
+```
 
-1. `importLeadBruto.job.ts` – Importa dados de identificação da unidade consumidora.
-2. `importEnergiaDemanda.job.ts` – Insere dados mensais de energia e demanda.
-3. `importQuality.job.ts` – Insere indicadores de qualidade (DIC, FIC, sem rede).
-4. `enrichLeads.job.ts` – Enriquecimento via APIs externas.
-5. `classifyLeads.job.ts` – Classificação por perfil de prioridade.
+### Ordem de Execução
+
+1. `importarUCAT`
+2. `importarUCMT`
+3. `importarUCBT`
+4. `normalizarDadosLeads`
+5. `inferirGeoInfoLead`
+6. `inferirCNPJporCoordenada`
+7. `inserirEnergiaLeads`
+8. `inserirDemandaLeads`
+9. `inserirQualidadeLeads`
 
 ---
 
@@ -106,17 +88,10 @@ cd apps/backend
 # .env
 DATABASE_URL="file:./dev.db" # ou PostgreSQL URL
 GOOGLE_API_KEY=...
-CNPJ_API_KEY=...
+CNPJA_TOKEN=...
 
 npm install
-npm run dev
-
-# Execução dos scripts em ordem:
-npx tsx src/jobs/importers/importLeadBruto.job.ts
-npx tsx src/jobs/importers/importEnergiaDemanda.job.ts
-npx tsx src/jobs/quality/importQuality.job.ts
-npx tsx src/jobs/enrichment/enrichLeads.job.ts
-npx tsx src/jobs/classification/classifyLeads.job.ts
+npx tsx src/jobs/orchestrators/importarTudo.job.ts
 ```
 
 ---
@@ -152,39 +127,45 @@ Campos comuns: `COD_ID_ENCR`, `CLAS_SUB`, `GRU_TAR`, `TIP_CC`, `DIST`, `MUN`, `C
 * Tabelas Prisma: `LeadBruto`, `LeadEnergia`, `LeadDemanda`, `LeadQualidade`, `LeadEnriquecido`
 * Configuração SQLite
 
-### 📅 Fase 2: Importação ANEEL
+### ✅ Fase 2: Importação ANEEL
 
-* Scripts `importLeadBruto`, `importEnergiaDemanda`, `importQuality`
-* Validação de duplicatas e erros
+* Scripts `importarUCAT`, `importarUCMT`, `importarUCBT`
+* Validação e merge dos dados no banco
 
-### 🔗 Fase 3: Enriquecimento Inteligente
+### ✅ Fase 3: Normalização e Enriquecimento
 
+* `normalizarDadosLeads`
 * APIs externas para CNPJ, CNAE, endereço
-* Fallbacks e tratamento de erros
+* `inferirGeoInfoLead`, `inferirCNPJporCoordenada`
 
-### 🔥 Fase 4: Classificação de Leads
+### ✅ Fase 4: Qualidade
+
+* Jobs para `lead_energia`, `lead_demanda`, `lead_qualidade`
+* Baseados em dados combinados UCAT + UCMT + UCBT
+
+### 🔜 Fase 5: Classificação
 
 * Algoritmo de HOT/WARM/COLD
 * Regras baseadas em consumo, qualidade, perfil econômico
 
-### 🔌 Fase 5: API REST
+### 🔌 Fase 6: API REST
 
 * Endpoints: `/leads`, `/lead/:id`, filtros e paginação
 * Swagger ou Postman
 
-### 🧽 Fase 6: Frontend React
+### 🎨 Fase 7: Frontend React
 
 * Mapa interativo com filtros
 * Cards de lead com dados técnicos
 * Tela detalhada de oportunidades
 
-### 📡 Fase 7: Produção & Escalabilidade
+### 🛁 Fase 8: Produção & Escalabilidade
 
 * PostgreSQL na Azure
 * Agendamento de jobs
 * Monitoramento e logging
 
-### 🌟 Fase 8: Evolução & Versão 2.0
+### 🌟 Fase 9: Versão 2.0
 
 * Docker + Deploy
 * LGPD compliance
@@ -196,9 +177,3 @@ Campos comuns: `COD_ID_ENCR`, `CLAS_SUB`, `GRU_TAR`, `TIP_CC`, `DIST`, `MUN`, `C
 
 **Guilherme Costa Proença**
 [GitHub](https://github.com/GuilhermeCostaProenca)
-
----
-
-## 📎 Licença
-
-MIT – Livre para uso e modificação com créditos.
