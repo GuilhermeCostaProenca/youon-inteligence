@@ -1,5 +1,5 @@
 import { prisma } from '../database/prismaClient';
-import { parseFloatOrNull } from '../utils/normalizers';
+import { parseFloatOrNull } from '../jobs/utils/normalizadores';
 import crypto from 'crypto';
 
 export async function salvarRelacionadas(id: string, row: any) {

@@ -34,7 +34,6 @@ youon-inteligence/
 │   │   │   │   ├── quality/
 │   │   │   │   ├── classification/
 │   │   │   │   └── orchestrators/
-│   │   │   ├── utils/
 │   │   │   ├── database/
 │   │   │   └── server.ts
 │   └── frontend/
@@ -45,7 +44,7 @@ youon-inteligence/
 │           ├── services/
 │           └── styles/
 ├── infra/
-├── packages/
+├── packages/             # pacotes compartilhados (ex.: API clients)
 ├── README.md
 ```
 

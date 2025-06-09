@@ -3,11 +3,11 @@
 import fs from 'fs';
 import path from 'path';
 import { parse } from 'csv-parse/sync';
-import { prisma } from '../../database/prisma';
-import datasets from '../../datasets.json';
-import camposMap from '../../dataset_campos_map.json';
+import { prisma } from '../../database/prismaClient';
+import datasets from '../../../data/datasets.json';
+import camposMap from '../../../data/dataset_campos_map.json';
 
-const downloadsDir = path.resolve(__dirname, '../../downloads');
+const downloadsDir = path.resolve(__dirname, '../../../data/downloads');
 
 async function importarEnergia() {
   let total = 0;
