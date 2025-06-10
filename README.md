@@ -91,7 +91,17 @@ CNPJA_TOKEN=...
 
 npm install
 npx tsx src/jobs/orchestrators/importarTudo.job.ts
+
+### 🐍 Executando `enrich_leads.py`
+
+Se preferir utilizar a etapa de enriquecimento em Python, instale o gerenciador [Poetry](https://python-poetry.org/) e as dependências definidas em `pyproject.toml`:
+
+```bash
+cd apps/backend
+poetry install
+poetry run python scripts/enrich_leads.py
 ```
+
 
 ---
 
